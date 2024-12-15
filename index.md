@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cinematography in Times of Crisis: Exploring the Impact of Global Events on Film Genres and Public Preferences
+title: Cinematography in Times of Crisis - Exploring the Impact of Global Events on Film Genres and Public Preferences
 subtitle: Analysis of the effects of crisis on the production of movies and how they are received by the public
 cover-img: /assets/img/cover_img.jpeg
 thumbnail-img: /assets/img/cover_img.jpeg
