@@ -19,6 +19,12 @@ Using the CMU Movie Dataset, we will answer the following research questions:
 4. How do global events like natural disasters, pandemics, and wars influence public preferences for specific themes and genres?
    
 ## Portrayal of historical Events 
+This part of the Analysis will mainly focus on the sentiment associated with movies for the four specific conflicts retained earlier for ... 
+* World War II
+* Korean War
+* Cold War
+* Vietnam War
+
 TODO: add the first part with the global sentiment analysis 
 
 Now that we have overall information on the sentiment about different war, we can delve into it deeper and try to similar actors have similar sentiment in different sides for a given conflict.  
