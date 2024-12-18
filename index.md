@@ -7,7 +7,38 @@ thumbnail-img: /assets/img/cover_img.jpeg
 share-img: /assets/img/cover_img.jpeg
 use-site-title: true
 ---
+<style>
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background */
+  border-radius: 50%; /* Make the buttons circular */
+  width: 40px; /* Adjust width */
+  height: 40px; /* Adjust height */
+}
 
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  width: auto; /* Adjust width to fit the button */
+}
+
+.carousel-control-prev {
+  left: -5%; /* Move left button further to the left */
+}
+
+.carousel-control-next {
+  right: -5%; /* Move right button further to the right */
+}
+
+.carousel-indicators button {
+  background-color: black; /* Make carousel indicators visible */
+  width: 12px; /* Adjust width */
+  height: 12px; /* Adjust height */
+  border-radius: 50%; /* Make indicators circular */
+}
+</style>
 ## Background and motivation
 Ever since the begining of cinematography, movies have often been a reflection of reality. Whether it is through romance stories or tragedies, fiction has been used as a way to mirror real life situations.
 This tendency also applies to crises, as they are major events that impact the socio-economic status of the world, as well as peoples' daily lives. It is only natural to ask ourselves how these very particular events are mirrored in movies, and how well these depictions are received by the public.
