@@ -107,13 +107,13 @@ While our previous analysis revealed distinct patterns in genre production acros
 
 We isolated war films specifically depicting our four conflicts of interest and identified their respective sides. Unfortunately, given the limited number of movies produced about the Vietnam War and the Korean War, we have decided to focus exclusively on the Cold War and World War II.
 
-<iframe src="\number_of_war_movies.html" width="100%" height="800px" frameborder="0">n_movies</iframe>
+<iframe src="number_of_war_movies.html" width="100%" height="800px" frameborder="0">n_movies</iframe>
 
 ## Sentiment Analysis
 
 We performed a sentiment analysis on the summaries of the movies identified. This analysis helped identify the emotional tone of the summaries, determining whether they are primarily positive, negative, or neutral depending of the countries of production and the event. 
 
-<iframe src="\wwii_distribution_compound.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+<iframe src="wwii_distribution_compound.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
 
 
 
