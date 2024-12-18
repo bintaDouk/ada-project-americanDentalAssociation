@@ -24,8 +24,9 @@
 
         .carousel-slide {
             flex: 0 0 100%; /* Each slide takes full width */
-            width: 750px;
-            height: 530px;
+            width: 800px;
+            height: 600px;
+            display: block;
         }
 
         .carousel-slide iframe {
@@ -67,16 +68,16 @@
 <div class="carousel-container">
     <div class="carousel-slides">
         <div class="carousel-slide">
-            <iframe src="countries_World_War_II.html"></iframe>
+            <iframe src="countries_World_War_II.html" id="iframe-0"></iframe>
         </div>
         <div class="carousel-slide">
-            <iframe src="countries_Korean_War.html"></iframe>
+            <iframe src="countries_Korean_War.html" id="iframe-1"></iframe>
         </div>
         <div class="carousel-slide">
-            <iframe src="countries_Cold_War.html"></iframe>
+            <iframe src="countries_Cold_War.html" id="iframe-2"></iframe>
         </div>
         <div class="carousel-slide">
-            <iframe src="countries_Vietnam_War.html"></iframe>
+            <iframe src="countries_Vietnam_War.html" id="iframe-3"></iframe>
         </div>
     </div>
 
@@ -86,6 +87,7 @@
 
 <script>
     let currentSlide = 0;
+    const delayToEnsurePlotlyLoads = 500; // Delay in milliseconds to ensure Plotly renders
 
     function moveSlide(direction) {
         const slides = document.querySelector('.carousel-slides');
@@ -94,9 +96,19 @@
         // Calculate the new slide index
         currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
 
-        // Update the transform property to show the correct slide
-        slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        // Set a small delay to ensure that the plot renders fully before the transition completes
+        setTimeout(() => {
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }, delayToEnsurePlotlyLoads);
     }
+
+    // Preload all iframes to avoid reloading during slide changes
+    window.addEventListener('load', () => {
+        const iframes = document.querySelectorAll('iframe');
+        iframes.forEach((iframe) => {
+            iframe.contentWindow.location.reload();
+        });
+    });
 </script>
 
 </body>
