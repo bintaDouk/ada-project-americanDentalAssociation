@@ -57,6 +57,7 @@ After some quick initial filtering, we merged the CMU and IMDb datasets to gener
 On top of that, we decided to focus our analysis on a reduced set of wars, being `World War II`, `Korean War`, `Cold War` and `Vietnam War`, which from a quick initial analysis seemed to have the largest related information in the movies dataset.
 
 ## Inspect genre groups
+
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
   <div class="carousel-indicators">
@@ -93,6 +94,71 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
   </button>
 </div>
 
+<div class="container my-4">
+    <!-- Second Carousel -->
+    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <iframe src="images/Q1/trend_batdeath_military.html" frameborder="0" width="100%" height="600"></iframe>
+            </div>
+            <div class="carousel-item">
+                <iframe src="images/Q1/trend_batdeath_antiwarmilitary.html" frameborder="0" width="100%" height="600"></iframe>
+            </div>
+                <iframe src="images/Q1/trend_batdeath_political.html" frameborder="0" width="100%" height="600"></iframe>
+            </div>
+                <iframe src="images/Q1/trend_batdeath_dystopian.html" frameborder="0" width="100%" height="600"></iframe>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+## Correlations
+
+---
+layout: default
+title: 4x3 Plot Layout
+---
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+  <iframe src="{{ '/images/Q1/corr_numwars_1.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_numwars_2.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_numwars_3.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_numwars_4.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_numwars_5.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_numwars_6.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_numwars_7.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_numwars_8.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_numwars_9.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_numwars_10.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_numwars_11.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_numwars_12.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+  <iframe src="{{ '/images/Q1/corr_batdeath_1.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_batdeath_2.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_batdeath_3.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_batdeath_4.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_batdeath_5.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_batdeath_6.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_batdeath_7.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_batdeath_8.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_batdeath_9.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_batdeath_10.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_batdeath_11.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+  <iframe src="{{ '/images/Q1/corr_batdeath_12.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+</div>
 
 ## World Maps for Analyzed Conflicts
 In order to provide a quick overview of the wars we are analyzing, we provide some initial plots, showing the world map for the opposing countries for each one of the 4 conflicts:
