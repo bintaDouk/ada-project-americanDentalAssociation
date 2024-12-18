@@ -28,9 +28,7 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
 ## World Maps for Analyzed Conflicts
 In order to provide a quick overview of the wars we are analyzing, we provide some initial plots, showing the world map for the opposing countries for each one of the 4 conflicts:
 
-{% raw %}
 <iframe class="toggle-frame" src="images\Q2\countries_slideshow.html" width="800px" height="800px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-{% endraw %}
 
 ## Movies Timeline
 In this third section of the analysis, we filter the movies by looking at the summaries from the `Movies` dataset, and for each war we look to how many movies about it were released over the course of the years.
