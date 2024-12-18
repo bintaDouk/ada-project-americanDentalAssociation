@@ -38,16 +38,16 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src="images/Q1/trend_numwars_military.html" width="80%" height="400" frameborder="0"></iframe>
+      <iframe src="images/Q1/trend_numwars_military.html" width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src="images/Q1/trend_numwars_antiwarmilitary.html" width="80%" height="400" frameborder="0"></iframe>
+      <iframe src="images/Q1/trend_numwars_antiwarmilitary.html" width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src="images/Q1/trend_numwars_political.html" width="80%" height="400" frameborder="0"></iframe>
+      <iframe src="images/Q1/trend_numwars_political.html" width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src="images/Q1/trend_numwars_dystopian.html" width="80%" height="400" frameborder="0"></iframe>
+      <iframe src="images/Q1/trend_numwars_dystopian.html" width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
