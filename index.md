@@ -31,7 +31,15 @@ In order to provide a quick overview of the wars we are analyzing, we provide so
 {% raw %}
 <iframe class="toggle-frame" src="images\Q2\countries_slideshow.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
 {% raw %}
-   
+
+## Movies Timeline
+In this third section of the analysis, we filter the movies by looking at the summaries from the `Movies` dataset, and for each war we look to how many movies about it were released over the course of the years.
+
+<iframe class="toggle-frame" src="images\Q2\movies_timeline.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+
+## Geographical Analysis of Movies
+
+
 ## Portrayal of historical events accross perspectives
 This part of the Analysis will mainly focus on the sentiment associated with movies for the four specific conflicts retained earlier for ... 
 * World War II
@@ -47,6 +55,6 @@ We perform entity-level sentiment analysis, in order toextract the sentiment ass
 WWII: Nazis, 
 Korean War:
 
-<iframe class="toggle-frame" src="heatmap_0.html" width="8px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_0.html" width="800px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
 
 
