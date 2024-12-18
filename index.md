@@ -97,10 +97,10 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
 ## World Maps for Analyzed Conflicts
 In order to provide a quick overview of the wars we are analyzing, we provide some initial plots, showing the world map for the opposing countries for each one of the 4 conflicts:
 
-<iframe class="toggle-frame" src="images\Q2\countries_World_War_II.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="images\Q2\countries_Korean_War.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="images\Q2\countries_Cold_War.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="images\Q2\countries_Vietnam_War.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe src="images\Q2\countries_World_War_II.html" width="800px" height="600px" frameborder="0" position="relative"  style="display: block;">positive barplot</iframe>
+<iframe src="images\Q2\countries_Korean_War.html" width="800px" height="600px" frameborder="0" position="relative" style="display: block;">positive barplot</iframe>
+<iframe src="images\Q2\countries_Cold_War.html" width="800px" height="600px" frameborder="0" position="relative" style="display: block;">positive barplot</iframe>
+<iframe src="images\Q2\countries_Vietnam_War.html" width="800px" height="600px" frameborder="0" position="relative"  style="display: block;">positive barplot</iframe>
 
 # Examining Storytelling Variations in War Films
 While our previous analysis revealed distinct patterns in genre production across different countries, a deeper examination of narrative construction within the same genre warrants investigation. Our analysis will focus exclusively on war cinema as it provides a unique window into how different nations process, interpret, and memorialize shared historical events through film. War movies are particularly revealing because they often reflect not only a country's historical perspective but also its contemporary values, national identity, and relationship with military conflict. 
