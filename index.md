@@ -30,18 +30,41 @@ After some quick initial filtering, we merged the CMU and IMDb datasets to gener
 On top of that, we decided to focus our analysis on a reduced set of wars, being `World War II`, `Korean War`, `Cold War` and `Vietnam War`, which from a quick initial analysis seemed to have the largest related information in the movies dataset.
 
 ## Inspect genre groups
----
-gallery_a:
-  - images: 
-    - image: images/Q1/trend_numwars_political.html
-    - image: images/Q1/trend_numwars_political.html
-    - image: images/Q1/trend_numwars_political.html
-    - image: images/Q1/trend_numwars_political.html
----
-{% include carousel.html my_images=gallery_a %}
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
 
-<iframe class="toggle-frame" src="images/Q1/genregroups_numberwars.html" width="900px" height="700px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="images/Q1/genregroups_battledeaths.html" width="900px" height="700px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe src="images/Q1/trend_numwars_political.html" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src="images/Q1/trend_numwars_military.html" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src="images/Q1/trend_numwars_dystopian.html" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src="images/Q1/trend_numwars_positive.html" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 
 ## World Maps for Analyzed Conflicts
