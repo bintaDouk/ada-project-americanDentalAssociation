@@ -29,8 +29,8 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
 In order to provide a quick overview of the wars we are analyzing, we provide some initial plots, showing the world map for the opposing countries for each one of the 4 conflicts:
 
 <iframe class="toggle-frame" src="images\Q2\countries_slideshow.html" width="750px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-
-## Portrayal of historical Events 
+   
+## Portrayal of historical events accross perspectives
 This part of the Analysis will mainly focus on the sentiment associated with movies for the four specific conflicts retained earlier for ... 
 * World War II
 * Korean War
@@ -38,11 +38,13 @@ This part of the Analysis will mainly focus on the sentiment associated with mov
 * Vietnam War
 
 TODO: add the first part with the global sentiment analysis 
-
+### The shifting sentiment towards organizations during an world-scale conflict.
+The way conflicts are represented in cultural narratives often reveals underlying societal attitudes, biases, and historical contexts. In this part of the study we applied entity-level sentiment analysis to entities tagged as 
 Now that we have overall information on the sentiment about different war, we can delve into it deeper and try to similar actors have similar sentiment in different sides for a given conflict.  
 We perform entity-level sentiment analysis, in order toextract the sentiment associate with a particular entity. For a given conflict we select entities that ...
 WWII: Nazis, 
 Korean War:
 
-<iframe class="toggle-frame" src="heatmap_0.html" width="750px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_0.html" width="8px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+
 
