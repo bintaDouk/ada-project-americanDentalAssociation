@@ -28,7 +28,9 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
 ## World Maps for Analyzed Conflicts
 In order to provide a quick overview of the wars we are analyzing, we provide some initial plots, showing the world map for the opposing countries for each one of the 4 conflicts:
 
-<iframe class="toggle-frame" src="images\Q2\countries_slideshow.html" width="750px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+{% raw %}
+<iframe class="toggle-frame" src="images\Q2\countries_slideshow.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+{% raw %}
    
 ## Portrayal of historical events accross perspectives
 This part of the Analysis will mainly focus on the sentiment associated with movies for the four specific conflicts retained earlier for ... 
