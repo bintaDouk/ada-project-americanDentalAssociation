@@ -9,7 +9,7 @@
         .carousel-container {
             position: relative;
             width: 800px;
-            height: 800px;
+            height: 400px;
             margin: auto;
             overflow: hidden;
             border: 1px solid #ccc;
@@ -19,13 +19,13 @@
         .carousel-slides {
             display: flex;
             transition: transform 0.5s ease-in-out;
-            width: calc(100% * 4); /* Number of slides */
+            width: calc(100% * 3); /* Number of slides */
         }
 
         .carousel-slide {
             flex: 0 0 100%; /* Each slide takes full width */
             width: 800px;
-            height: 800px;
+            height: 400px;
             display: block;
         }
 
@@ -68,16 +68,13 @@
 <div class="carousel-container">
     <div class="carousel-slides">
         <div class="carousel-slide">
-            <iframe src="countries_World_War_II.html" id="iframe-0"></iframe>
+            <iframe src="genres_summary_World War II.html" id="iframe-0"></iframe>
         </div>
         <div class="carousel-slide">
-            <iframe src="countries_Korean_War.html" id="iframe-1"></iframe>
+            <iframe src="genres_summary_Korean War.html" id="iframe-1"></iframe>
         </div>
         <div class="carousel-slide">
-            <iframe src="countries_Cold_War.html" id="iframe-2"></iframe>
-        </div>
-        <div class="carousel-slide">
-            <iframe src="countries_Vietnam_War.html" id="iframe-3"></iframe>
+            <iframe src="genres_summary_Cold War.html" id="iframe-2"></iframe>
         </div>
     </div>
 
