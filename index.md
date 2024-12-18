@@ -8,6 +8,10 @@ share-img: /assets/img/cover_img.jpeg
 use-site-title: true
 ---
 
+{% include carousel.html height="50" unit="%" duration="7" number="1" %}
+
+{% include carousel.html height="50" unit="%" duration="7" number="2" %}
+
 ## Background and motivation
 Ever since the begining of cinematography, movies have often been a reflection of reality. Whether it is through romance stories or tragedies, fiction has been used as a way to mirror real life situations.
 This tendency also applies to crises, as they are major events that impact the socio-economic status of the world, as well as peoples' daily lives. It is only natural to ask ourselves how these very particular events are mirrored in movies, and how well these depictions are received by the public.
@@ -26,6 +30,15 @@ After some quick initial filtering, we merged the CMU and IMDb datasets to gener
 On top of that, we decided to focus our analysis on a reduced set of wars, being `World War II`, `Korean War`, `Cold War` and `Vietnam War`, which from a quick initial analysis seemed to have the largest related information in the movies dataset.
 
 ## Inspect genre groups
+---
+gallery_a:
+  - images: 
+    - image: images/Q1/trend_numwars_political.html
+    - image: images/Q1/trend_numwars_political.html
+    - image: images/Q1/trend_numwars_political.html
+    - image: images/Q1/trend_numwars_political.html
+---
+{% include carousel.html my_images=gallery_a %}
 
 <iframe class="toggle-frame" src="images/Q1/genregroups_numberwars.html" width="900px" height="700px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
 <iframe class="toggle-frame" src="images/Q1/genregroups_battledeaths.html" width="900px" height="700px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
