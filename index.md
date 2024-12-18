@@ -27,7 +27,7 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
 
 ## Inspect genre groups
 
-<iframe class="toggle-frame" src="images/Q1/genregroups_ongoingwars.html" width="900px" height="700px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="images/Q1/genregroups_numberwars.html" width="900px" height="700px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
 <iframe class="toggle-frame" src="images/Q1/genregroups_battledeaths.html" width="900px" height="700px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
 
 
