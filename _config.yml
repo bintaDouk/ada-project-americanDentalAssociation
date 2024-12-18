@@ -19,7 +19,7 @@ author: American Dental Association
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About: "aboutme"
   Resources:
     - The Dataset: "https://www.cs.cmu.edu/~ark/personas/"
 
