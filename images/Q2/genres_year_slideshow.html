@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plotly Graph Carousel</title>
+    <style>
+        /* Basic styles for the carousel */
+        .carousel-container {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            margin: auto;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: calc(100% * 4); /* Number of slides */
+        }
+
+        .carousel-slide {
+            flex: 0 0 100%; /* Each slide takes full width */
+            width: 800px;
+            height: 600px;
+            display: block;
+        }
+
+        .carousel-slide iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Navigation buttons */
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .carousel-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .carousel-button.left {
+            left: 10px;
+        }
+
+        .carousel-button.right {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="carousel-container">
+    <div class="carousel-slides">
+        <div class="carousel-slide">
+            <iframe src="genres_year_World War II.html" id="iframe-0"></iframe>
+        </div>
+        <div class="carousel-slide">
+            <iframe src="genres_year_Korean War.html" id="iframe-1"></iframe>
+        </div>
+        <div class="carousel-slide">
+            <iframe src="genres_year_Cold War.html" id="iframe-2"></iframe>
+        </div>
+        <div class="carousel-slide">
+            <iframe src="genres_year_Vietnam War.html" id="iframe-3"></iframe>
+        </div>
+    </div>
+
+    <button class="carousel-button left" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-button right" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const delayToEnsurePlotlyLoads = 500; // Delay in milliseconds to ensure Plotly renders
+
+    function moveSlide(direction) {
+        const slides = document.querySelector('.carousel-slides');
+        const totalSlides = document.querySelectorAll('.carousel-slide').length;
+
+        // Calculate the new slide index
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+        // Set a small delay to ensure that the plot renders fully before the transition completes
+        setTimeout(() => {
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }, delayToEnsurePlotlyLoads);
+    }
+
+    // Preload all iframes to avoid reloading during slide changes
+    window.addEventListener('load', () => {
+        const iframes = document.querySelectorAll('iframe');
+        iframes.forEach((iframe) => {
+            iframe.contentWindow.location.reload();
+        });
+    });
+</script>
+
+</body>
+</html>
