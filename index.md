@@ -26,12 +26,10 @@ After some quick initial filtering, we merged the CMU and IMDb datasets to gener
 On top of that, we decided to focus our analysis on a reduced set of wars, being `World War II`, `Korean War`, `Cold War` and `Vietnam War`, which from a quick initial analysis seemed to have the largest related information in the movies dataset.
 
 ## Inspect genre groups
-{% raw %}
+
 <iframe class="toggle-frame" src="images/Q1/genregroups_ongoingwars.html" width="900px" height="700px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-{% endraw %}
-{% raw %}
 <iframe class="toggle-frame" src="images/Q1/genregroups_battledeaths.html" width="900px" height="700px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-{% endraw %}
+
 
 ## World Maps for Analyzed Conflicts
 In order to provide a quick overview of the wars we are analyzing, we provide some initial plots, showing the world map for the opposing countries for each one of the 4 conflicts:
