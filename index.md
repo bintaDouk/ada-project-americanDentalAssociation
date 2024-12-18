@@ -29,7 +29,7 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
 In order to provide a quick overview of the wars we are analyzing, we provide some initial plots, showing the world map for the opposing countries for each one of the 4 conflicts:
 
 {% raw %}
-<iframe class="toggle-frame" src="images\Q2\countries_slideshow.html" width="900px" height="700px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="images\Q2\countries_slideshow.html" width="800px" height="800px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
 {% endraw %}
 
 ## Movies Timeline
