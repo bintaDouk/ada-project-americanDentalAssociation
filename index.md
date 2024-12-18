@@ -116,6 +116,6 @@ We perform entity-level sentiment analysis, in order toextract the sentiment ass
 WWII: Nazis, 
 Korean War:
 
-<iframe class="toggle-frame" src="heatmap_0.html" width="800px" height="530px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_0.html" width="800px" height="900px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
 
 
