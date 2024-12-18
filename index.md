@@ -32,5 +32,5 @@ We perform entity-level sentiment analysis, in order toextract the sentiment ass
 WWII: Nazis, 
 Korean War:
 
-{ % heatmap_0.html % }
+{ % include_relative heatmap_0.html % }
 
