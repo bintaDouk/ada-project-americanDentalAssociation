@@ -122,13 +122,66 @@ This part of the Analysis will mainly focus on the sentiment associated with mov
 * Vietnam War
 
 TODO: add the first part with the global sentiment analysis 
-### The shifting sentiment towards organizations during an world-scale conflict.
-The way conflicts are represented in cultural narratives often reveals underlying societal attitudes, biases, and historical contexts. In this part of the study we applied entity-level sentiment analysis to entities tagged as 
-Now that we have overall information on the sentiment about different war, we can delve into it deeper and try to similar actors have similar sentiment in different sides for a given conflict.  
-We perform entity-level sentiment analysis, in order toextract the sentiment associate with a particular entity. For a given conflict we select entities that ...
-WWII: Nazis, 
-Korean War:
+### The shifting sentiment towards organizations during a world-scale conflict.
+The way conflicts are represented in cultural narratives often reveals underlying societal attitudes, biases, and historical contexts. In this part of the study we applied entity-level sentiment analysis to entities tagged as ‘ORGANIZATIONS’ in two worldwide conflicts : World War II and the Cold War.  
+By analyzing the sentiment associated with such entities, we can uncover patterns of representation before, during and after the conflicts.   
+The accompanying heatmaps visualize the compound sentiment scores associated with each organization:
+* Negative sentiment is indicated by negative scores, represented by shades of red.
+* Positive sentiment is shown by positive scores, depicted in shades of blue.
+* The deeper the color, the more extreme the sentiment.
+#### World War II
+Starting with World War II, we analyse representations from two key perspectives : the Allied Forces and the Axis forces. For the Allied forces,sufficent data allows for a comparative analysis of sentiment before and after the conflict, leading to three significant observations. 
 
-<iframe class="toggle-frame" src="heatmap_0.html" width="800px" height="900px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
 
+<script>
+function showFrame(frameId) {
+  // Get all iframes with the toggle-frame class
+  var frames = document.getElementsByClassName('toggle-frame');
+
+  // Hide all iframes with the toggle-frame class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+
+<!-- Create the buttons -->
+<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('Before1')">Allied Side, Before</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('After1')">Allied Side, After</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('Before2')">Axis Side, Before</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('After2')">Axis Side, After</button>
+
+
+<iframe class="toggle-frame" src="heatmap_0.html" width="800px" height="900px" frameborder="0" position="relative" id="Before1" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_1.html" width="800px" height="900px" frameborder="0" position="relative" id="After1" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_2.html" width="800px" height="900px" frameborder="0" position="relative" id="Before2" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_3.html" width="800px" height="900px" frameborder="0" position="relative" id="After2" style="display: block;">positive barplot</iframe>
+ 
+**Military Authorities: Universally Negative Depictions**  
+Regardless of the geopolitical side, military authorities are predominantly portrayed negatively before and after the conflict.  
+One key example of this phenomenon appears in the heatmaps of the Allied forces (before and after the conflict), where entities tagged with military ranks like “Commander” and “Infantry” consistently exhibit highly negative scores.
+This reflects a recurring portrayal of militarism as oppressive and destructive, particularly when analyzed over time. Even as the conflict resolves, negative sentiment toward military organizations persists. 
+
+**The Nazi Party A Temporal and Contextual Sentiment Shift**
+The portrayal of the Nazi Party in cultural narratives reveals temporal and cultural shifts.  
+On the first hand, in early Allied Forces representations, the Nazi Party occasionally exhibits positive sentiment scores. For example, the heatmap reveals a positive sentiment score of 0.61525 in the UK. This likely reflects pre-conflict ambivalence when the Nazi Party was not yet universally associated with its later actions. After the conflict, however, still in the western perspective, the party’s portrayal becomes uniformly negative, aligning with the global consensus on its role in the war.  
+On the other hand, in the Axis Forces’ heatmap, the Nazi Party is consistently portrayed with neutral to highly negative score, reflecting a post-war cultural reckoning within Germany.
+
+**International Organizations: Neutral Sentiment and Stabilizing Roles**
+Entities like NATO and other international organizations show a trend of neutral sentiment, notably in Western narratives.
+For example, in the post-conflict Allied Forces’ heatmap, NATO maintains neutral scores, emphasizing their portrayal as stabilizing forces.
+
+
+#### Cold War 
+The Cold War was as much a battle of ideologies as it was a geopolitical and military standoff. Sentiment analysis applied to organizational entities reveals the nuanced ways in which each side—Western Bloc and Eastern Bloc—portrayed military, political, and international organizations.
+
+
+
+<iframe class="toggle-frame" src="heatmap_4.html" width="800px" height="900px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_5.html" width="800px" height="900px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
 
