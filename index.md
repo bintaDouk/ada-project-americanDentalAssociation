@@ -311,9 +311,13 @@ The accompanying heatmaps visualize the compound sentiment scores associated wit
 * Negative sentiment is indicated by negative scores, represented by shades of red.
 * Positive sentiment is shown by positive scores, depicted in shades of blue.
 * The deeper the color, the more extreme the sentiment.
+  
+Through this lens, we highlight how military, political, and international organizations were characterized, uncovering patterns that reflect both the conflict's nature and the cultural context of each side.
+
 #### World War II
 Starting with World War II, we analyse representations from two key perspectives : the Allied Forces and the Axis forces. For the Allied forces,sufficent data allows for a comparative analysis of sentiment before and after the conflict, leading to three significant observations. 
 
+##### Allied Side Heatmaps
 
 <script>
 function showFrame(frameId) {
@@ -339,26 +343,10 @@ function showFrame(frameId) {
 <iframe class="toggle-frame" src="heatmap_0.html" width="800px" height="900px" frameborder="0" position="relative" id="wwii_Before1" style="display: block;">positive barplot</iframe>
 <iframe class="toggle-frame" src="heatmap_1.html" width="800px" height="900px" frameborder="0" position="relative" id="wwii_After1" style="display: block;">positive barplot</iframe>
 
+##### Axis Side Heatmap
+<iframe src="heatmap_2.html" width="800px" height="900px" frameborder="0" position="relative" id="Before2" style="display: block;">positive barplot</iframe>
 
-test test grrr paww
-<iframe class="toggle-frame" src="heatmap_2.html" width="800px" height="900px" frameborder="0" position="relative" id="Before2" style="display: block;">positive barplot</iframe>
-
- test test grrr paww
-<!-- Create the buttons -->
-<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('cw_Before1')">Western Block, Before</button>
-<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('cw_After1')">Western Block, After</button>
-
-<iframe class="toggle-frame" src="heatmap_3.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_Before1" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="heatmap_4.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_After1" style="display: block;">positive barplot</iframe>
-
-test test grrr paww
-<!-- Create the buttons -->
-<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('cw_Before2')">Sovietic Block, Before</button>
-<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('cw_After2')">Sovietic Block, After</button>
-
-<iframe class="toggle-frame" src="heatmap_5.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_Before2" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="heatmap_6.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_After2" style="display: block;">positive barplot</iframe>
-test test grrr paww
+These heatmaps lead us to three significant observations :
 **Military Authorities: Universally Negative Depictions**  
 Regardless of the geopolitical side, military authorities are predominantly portrayed negatively before and after the conflict.  
 One key example of this phenomenon appears in the heatmaps of the Allied forces (before and after the conflict), where entities tagged with military ranks like “Commander” and “Infantry” consistently exhibit highly negative scores.
@@ -372,6 +360,24 @@ On the other hand, in the Axis Forces’ heatmap, the Nazi Party is consistently
 **International Organizations: Neutral Sentiment and Stabilizing Roles**
 Entities like NATO and other international organizations show a trend of neutral sentiment, notably in Western narratives.
 For example, in the post-conflict Allied Forces’ heatmap, NATO maintains neutral scores, emphasizing their portrayal as stabilizing forces.
+
+#### Cold War
+##### Western Block Heatmaps 
+<!-- Create the buttons -->
+<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('cw_Before1')">Western Block, Before</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('cw_After1')">Western Block, After</button>
+
+<iframe class="toggle-frame" src="heatmap_3.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_Before1" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_4.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_After1" style="display: block;">positive barplot</iframe>
+
+##### Sovietic Block Heatmaps 
+<!-- Create the buttons -->
+<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('cw_Before2')">Sovietic Block, Before</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('cw_After2')">Sovietic Block, After</button>
+
+<iframe class="toggle-frame" src="heatmap_5.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_Before2" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_6.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_After2" style="display: block;">positive barplot</iframe>
+test test grrr paww
 
 
 #### Cold War 
