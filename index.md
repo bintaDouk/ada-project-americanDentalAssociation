@@ -333,11 +333,11 @@ function showFrame(frameId) {
 
 
 <!-- Create the buttons -->
-<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('Before1')">Allied Side, Before</button>
-<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('After1')">Allied Side, After</button>
+<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('wwii_Before1')">Allied Side, Before</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('wwii_After1')">Allied Side, After</button>
 
-<iframe class="toggle-frame" src="heatmap_0.html" width="800px" height="900px" frameborder="0" position="relative" id="Before1" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="heatmap_1.html" width="800px" height="900px" frameborder="0" position="relative" id="After1" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_0.html" width="800px" height="900px" frameborder="0" position="relative" id="wwii_Before1" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_1.html" width="800px" height="900px" frameborder="0" position="relative" id="wwii_After1" style="display: block;">positive barplot</iframe>
 
 
 
@@ -345,19 +345,19 @@ function showFrame(frameId) {
 
  
 <!-- Create the buttons -->
-<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('Before2')">Axis Side, Before</button>
-<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('After2')">Axis Side, After</button>
+<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('cw_Before1')">Western Block, Before</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('cw_After1')">Western Block, After</button>
 
-<iframe class="toggle-frame" src="heatmap_3.html" width="800px" height="900px" frameborder="0" position="relative" id="Before2" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="heatmap_4.html" width="800px" height="900px" frameborder="0" position="relative" id="After2" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_3.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_Before1" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_4.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_After1" style="display: block;">positive barplot</iframe>
 
 
 <!-- Create the buttons -->
-<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('Before2')">Axis Side, Before</button>
-<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('After2')">Axis Side, After</button>
+<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('cw_Before2')">Sovietic Block, Before</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('cw_After2')">Sovietic Block, After</button>
 
-<iframe class="toggle-frame" src="heatmap_5.html" width="800px" height="900px" frameborder="0" position="relative" id="Before2" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="heatmap_6.html" width="800px" height="900px" frameborder="0" position="relative" id="After2" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_5.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_Before2" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="heatmap_6.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_After2" style="display: block;">positive barplot</iframe>
 
 **Military Authorities: Universally Negative Depictions**  
 Regardless of the geopolitical side, military authorities are predominantly portrayed negatively before and after the conflict.  
