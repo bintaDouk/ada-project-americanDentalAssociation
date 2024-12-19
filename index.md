@@ -652,18 +652,18 @@ function showFrame(frameId) {
 ##### Axis Side Heatmap
 <iframe src="heatmap_2.html" width="800px" height="900px" frameborder="0" position="relative" id="Before2" style="display: block;">positive barplot</iframe>
 
-These heatmaps lead us to three significant observations :  
-**Military Authorities have an universally negative depiction**    
+These heatmaps lead us to three significant observations :   
+**Military Authorities have an universally negative depiction**      
 Regardless of the geopolitical side, military authorities are predominantly portrayed negatively before and after the conflict.  
 One key example of this phenomenon appears in the heatmaps of the Allied forces (before and after the conflict), where entities tagged with military ranks like “Commander” and “Infantry” consistently exhibit highly negative scores.
 This reflects a recurring portrayal of militarism as oppressive and destructive, particularly when analyzed over time. Even as the conflict resolves, negative sentiment toward military organizations persists. 
 
-**Political parties sentiment shift with context and time**
+**Political parties sentiment shift with context and time**  
 The main example of this phenomenon is the portrayal of the Nazi Party in cultural narratives, which reveals temporal and cultural shifts.  
 On the first hand, in early Allied Forces representations, the Nazi Party occasionally exhibits positive sentiment scores. For example, the heatmap reveals a positive sentiment score of 0.61525 in the UK. This likely reflects pre-conflict ambivalence when the Nazi Party was not yet universally associated with its later actions. After the conflict, however, still in the western perspective, the party’s portrayal becomes uniformly negative, aligning with the global consensus on its role in the war.  
 On the other hand, in the Axis Forces’ heatmap, the Nazi Party is consistently portrayed with neutral to highly negative score, reflecting a post-war cultural reckoning within Germany.
 
-**International Organizations as stabilizing roles**
+**International Organizations as stabilizing roles**  
 Entities like NATO and other international organizations show a trend of neutral sentiment, notably in Western narratives.
 For example, in the post-conflict Allied Forces’ heatmap, NATO maintains neutral scores, emphasizing their portrayal as stabilizing forces.
 
