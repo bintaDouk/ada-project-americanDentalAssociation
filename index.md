@@ -146,13 +146,13 @@ Correlations with number of ongoing wars
       <iframe src='/images/Q1/corr_numwars_1.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src="images/Q1/trend_numwars_antiwarmilitary.html" width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='/images/Q1/corr_numwars_2.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src="images/Q1/trend_numwars_political.html" width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='/images/Q1/corr_numwars_3.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src="images/Q1/trend_numwars_dystopian.html" width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='/images/Q1/corr_numwars_4.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -167,36 +167,186 @@ Correlations with number of ongoing wars
   </button>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-  <iframe src="{{ '/images/Q1/corr_numwars_1.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_numwars_2.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_numwars_3.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_numwars_4.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_numwars_5.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_numwars_6.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_numwars_7.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_numwars_8.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_numwars_9.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_numwars_10.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_numwars_11.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_numwars_12.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
+<div id="carouselcorr2" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselcorr2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselcorr2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselcorr2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselcorr2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe src='/images/Q1/corr_numwars_5.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_numwars_6.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_numwars_7.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_numwars_8.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div id="carouselcorr3" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselcorr3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselcorr3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselcorr3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselcorr3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe src='/images/Q1/corr_numwars_9.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_numwars_10.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_numwars_11.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_numwars_12.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr3" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr3" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
 Correlations with battle deaths
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-  <iframe src="{{ '/images/Q1/corr_batdeath_1.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_batdeath_2.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_batdeath_3.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_batdeath_4.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_batdeath_5.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_batdeath_6.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_batdeath_7.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_batdeath_8.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_batdeath_9.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_batdeath_10.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_batdeath_11.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/corr_batdeath_12.html' | relative_url }}" style="width: 33%; height: 400px; border: none;"></iframe>
+<div id="carouselcorr4" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe src='/images/Q1/corr_batdeath_1.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_batdeath_2.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_batdeath_3.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_batdeath_4.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr4" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr4" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div id="carouselcorr5" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselcorr5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselcorr5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselcorr5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselcorr5" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe src='/images/Q1/corr_numwars_5.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_batdeath_6.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_batdeath_7.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_batdeath_8.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr5" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr5" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div id="carouselcorr6" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselcorr6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselcorr6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselcorr6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselcorr6" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe src='/images/Q1/corr_batdeath_9.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_batdeath_10.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_batdeath_11.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/corr_batdeath_12.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr6" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr6" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
 Plotting the network
@@ -210,36 +360,158 @@ Plotting the network
 
 ## Specific Genres for the Chosen Wars
 World War II
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-  <iframe src="{{ '/images/Q1/WW2_barplot_militaryandantiwar.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/WW2_barplot_political.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/WW2_barplot_dystopian.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/WW2_barplot_positive.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+<div id="WW2" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#WW2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#WW2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#WW2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#WW2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe src='/images/Q1/WW2_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/WW2_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/WW2_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/WW2_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#WW2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#WW2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+
 
 The Cold War
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-  <iframe src="{{ '/images/Q1/ColdWar_barplot_militaryandantiwar.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/ColdWar_barplot_political.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/ColdWar_barplot_dystopian.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/ColdWar_barplot_positive.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+<div id="Cold" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#Cold" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#Cold" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#Cold" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#Cold" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe src='/images/Q1/ColdWar_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/ColdWar_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/ColdWar_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/ColdWar_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#Cold" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#Cold" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+
 
 The Vietnam War
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-  <iframe src="{{ '/images/Q1/Vietnam_War_barplot_militaryandantiwar.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/Vietnam_War_barplot_political.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/Vietnam_War_barplot_dystopian.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/Vietnam_War_barplot_positive.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+
+<div id="Vietnam" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe src='/images/Q1/Vietnam_War_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/Vietnam_War_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/Vietnam_War_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/Vietnam_War_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#Vietnam" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#Vietnam" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
+
 The Iran-Iraq War
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-  <iframe src="{{ '/images/Q1/Iran-Iraq_barplot_militaryandantiwar.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/Iran-Iraq_barplot_political.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/Iran-Iraq_barplot_dystopian.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
-  <iframe src="{{ '/images/Q1/Iran-Iraq_barplot_positive.html' | relative_url }}" style="width: 100%; height: 400px; border: none;"></iframe>
+
+<div id="Iran" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#Iran" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#Iran" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#Iran" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#Iran" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe src='/images/Q1/Iran-Iraq_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/Iran-Iraq_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/Iran-Iraq_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='/images/Q1/Iran-Iraq_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#Iran" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#Iran" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+
 
 ## World Maps for Analyzed Conflicts
 In order to provide a quick overview of the wars we are analyzing, we provide some initial plots, showing the world map for the opposing countries for each one of the 4 conflicts:
