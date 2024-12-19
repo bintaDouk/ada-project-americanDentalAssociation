@@ -144,16 +144,16 @@ Correlations with number of ongoing wars
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='/images/Q1/corr_numwars_1.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_1.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_numwars_2.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_2.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_numwars_3.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_3.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_numwars_4.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_4.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -181,16 +181,16 @@ Correlations with number of ongoing wars
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='/images/Q1/corr_numwars_5.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_5.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_numwars_6.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_6.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_numwars_7.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_7.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_numwars_8.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_8.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -218,16 +218,16 @@ Correlations with number of ongoing wars
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='/images/Q1/corr_numwars_9.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_9.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_numwars_10.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_10.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_numwars_11.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_11.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_numwars_12.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_12.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -256,16 +256,16 @@ Correlations with battle deaths
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='/images/Q1/corr_batdeath_1.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_1.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_batdeath_2.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_2.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_batdeath_3.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_3.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_batdeath_4.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_4.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -292,16 +292,16 @@ Correlations with battle deaths
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='/images/Q1/corr_numwars_5.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_5.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_batdeath_6.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_6.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_batdeath_7.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_7.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_batdeath_8.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_8.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -328,16 +328,16 @@ Correlations with battle deaths
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='/images/Q1/corr_batdeath_9.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_9.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_batdeath_10.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_10.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_batdeath_11.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_11.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/corr_batdeath_12.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_12.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -375,16 +375,16 @@ World War II
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='/images/Q1/WW2_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/WW2_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/WW2_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/WW2_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/WW2_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/WW2_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/WW2_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/WW2_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -413,16 +413,16 @@ The Cold War
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='/images/Q1/ColdWar_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/ColdWar_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/ColdWar_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/ColdWar_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/ColdWar_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/ColdWar_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/ColdWar_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/ColdWar_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -452,16 +452,16 @@ The Vietnam War
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='/images/Q1/Vietnam_War_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Vietnam_War_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/Vietnam_War_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Vietnam_War_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/Vietnam_War_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Vietnam_War_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/Vietnam_War_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Vietnam_War_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -491,16 +491,16 @@ The Iran-Iraq War
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='/images/Q1/Iran-Iraq_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Iran-Iraq_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/Iran-Iraq_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Iran-Iraq_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/Iran-Iraq_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Iran-Iraq_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='/images/Q1/Iran-Iraq_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Iran-Iraq_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
