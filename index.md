@@ -129,7 +129,7 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
 </div>
 
 ## Correlations
-Correlations with number of ongoing wars
+Correlations for the Second World War (1937-1947)
 
 <!-- First Carousel -->
 <div id="carouselcorr" class="carousel slide" data-bs-ride="carousel">
@@ -144,16 +144,26 @@ Correlations with number of ongoing wars
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='images/Q1/corr_numwars_1.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_Drama_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_2.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_Family_Film_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_3.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_Horror_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_4.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_Military_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <iframe src='images/Q1/corr_batdeath_Military&Antiwar_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <iframe src='images/Q1/corr_batdeath_War_film_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <iframe src='images/Q1/corr_numwars_Antiwar_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <iframe src='images/Q1/corr_numwars_Disaster_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <iframe src='images/Q1/corr_numwars_Thriller_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -168,6 +178,8 @@ Correlations with number of ongoing wars
   </button>
 </div>
 
+Correlations for the Vietnam War (1963-1977)
+
 <!-- Second Carousel -->
 <div id="carouselcorr2" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
@@ -181,16 +193,13 @@ Correlations with number of ongoing wars
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='images/Q1/corr_numwars_5.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_Fantasy_1963-1977.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_6.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_Family_Film_1963-1977.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_7.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_8.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_Romantic_comedy_1963-1977.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -205,6 +214,11 @@ Correlations with number of ongoing wars
   </button>
 </div>
 
+Correlations for the Cold War (1947-1991)
+
+<iframe src='images/Q1/corr_numwars_9.html' width="100%" height="600" frameborder="0"></iframe>
+
+Correlations for the Iran-Iraq War (1978-1990)
 <!-- Third Carousel -->
 <div id="carouselcorr3" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
@@ -218,16 +232,16 @@ Correlations with number of ongoing wars
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='images/Q1/corr_numwars_9.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_Disaster_1978-1990.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_10.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_Superhero_1978-1990.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_11.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_Disaster_1978-1990.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_12.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_Family_Film_1978-1990.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -242,7 +256,8 @@ Correlations with number of ongoing wars
   </button>
 </div>
 
-Correlations with battle deaths
+Correlations for the timeline (1950-2012)
+1950 was created as a cut off since the spike in battle deaths during the WW2 significantely affected the results.
 
 <div id="carouselcorr4" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
@@ -256,16 +271,10 @@ Correlations with battle deaths
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='images/Q1/corr_batdeath_1.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_Romantic_comedy_1950-2012.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_2.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_3.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_4.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_Superhero_1950-2012.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -275,78 +284,6 @@ Correlations with battle deaths
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr4" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-<div id="carouselcorr5" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselcorr5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselcorr5" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselcorr5" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselcorr5" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
-
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/corr_numwars_5.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_6.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_7.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_8.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr5" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr5" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-<div id="carouselcorr6" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselcorr6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselcorr6" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselcorr6" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselcorr6" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
-
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/corr_batdeath_9.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_10.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_11.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_12.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr6" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr6" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -413,16 +350,16 @@ The Cold War
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='images/Q1/ColdWar_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Cold_War_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/ColdWar_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Cold_War_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/ColdWar_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Cold_War_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/ColdWar_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Cold_War_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -452,16 +389,16 @@ The Vietnam War
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='images/Q1/Vietnam_War_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Vietnam_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/Vietnam_War_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Vietnam_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/Vietnam_War_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Vietnam_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/Vietnam_War_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Vietnam_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
