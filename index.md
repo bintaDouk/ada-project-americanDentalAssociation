@@ -587,7 +587,7 @@ We isolated war films specifically depicting our four conflicts of interest and 
 
 ## Sentiment Analysis
 
-# Word War II 
+### Word War II 
 
 We performed a sentiment analysis on the summaries of the movies identified. This analysis helped identify the emotional tone of the summaries, determining whether they are primarily positive, negative, or neutral depending of the countries of production and the event. 
 
@@ -599,7 +599,7 @@ We do observe a higher negative score which isn't surprizing, however the overla
 
 The distribution is pretty similar among the two samples, however the sample sizes are imbalanced, which could contribute to the variability observed, particularly for Side 2. We also conducted a T-test that confirmed that they were no significant difference between the two sides. 
 
-# Cold War 
+### Cold War 
 
 
 When comparing the results with those from Cold War-themed movies, we found that the sentiment analysis scores were remarkably consistent across both historical contexts. This suggests that the emotional tone in the plot summaries of war genre movies remains largely stable, regardless of the specific conflict being depicted. As with WWII movies, no significant differences were observed between the two sides for neutral, positive, or negative sentiment scores. While a difference in the compound score was noted, it is likely attributable to sample size limitations rather than a meaningful divergence in sentiment. 
@@ -610,7 +610,7 @@ When comparing the results with those from Cold War-themed movies, we found that
 It is not sufficient to draw definitive conclusions from these findings, as we cannot yet confidently determine whether there are no differences between countries in their depiction of conflicts within the movie industry. Our sample size was relatively small, and relying solely on plot summaries may not have been the most effective approach for capturing nuanced differences. In the next section, we will adopt a more qualitative approach, focusing not on the overall sentiment of the global plot but on the sentiment associated with specific entities. This shift in methodology aims to provide deeper insights and address potential limitations in our initial analysis.
 
 
-### The shifting sentiment towards organizations during a world-scale conflict.
+### The shifting sentiment towards organizations during a world-scale conflicts.
 The way conflicts are represented in cultural narratives often reveals underlying societal attitudes, biases, and historical contexts. In this part of the study we applied entity-level sentiment analysis to entities tagged as ‘ORGANIZATIONS’ in two worldwide conflicts : World War II and the Cold War.  
 By analyzing the sentiment associated with such entities, we can uncover patterns of representation before, during and after the conflicts.   
 The accompanying heatmaps visualize the compound sentiment scores associated with each organization:
@@ -652,18 +652,18 @@ function showFrame(frameId) {
 ##### Axis Side Heatmap
 <iframe src="heatmap_2.html" width="800px" height="900px" frameborder="0" position="relative" id="Before2" style="display: block;">positive barplot</iframe>
 
-These heatmaps lead us to three significant observations :
-**Military Authorities: Universally Negative Depictions**  
+These heatmaps lead us to three significant observations :  
+**Military Authorities have an universally negative depiction**    
 Regardless of the geopolitical side, military authorities are predominantly portrayed negatively before and after the conflict.  
 One key example of this phenomenon appears in the heatmaps of the Allied forces (before and after the conflict), where entities tagged with military ranks like “Commander” and “Infantry” consistently exhibit highly negative scores.
 This reflects a recurring portrayal of militarism as oppressive and destructive, particularly when analyzed over time. Even as the conflict resolves, negative sentiment toward military organizations persists. 
 
-**The Nazi Party A Temporal and Contextual Sentiment Shift**
-The portrayal of the Nazi Party in cultural narratives reveals temporal and cultural shifts.  
+**Political parties sentiment shift with context and time**
+The main example of this phenomenon is the portrayal of the Nazi Party in cultural narratives, which reveals temporal and cultural shifts.  
 On the first hand, in early Allied Forces representations, the Nazi Party occasionally exhibits positive sentiment scores. For example, the heatmap reveals a positive sentiment score of 0.61525 in the UK. This likely reflects pre-conflict ambivalence when the Nazi Party was not yet universally associated with its later actions. After the conflict, however, still in the western perspective, the party’s portrayal becomes uniformly negative, aligning with the global consensus on its role in the war.  
 On the other hand, in the Axis Forces’ heatmap, the Nazi Party is consistently portrayed with neutral to highly negative score, reflecting a post-war cultural reckoning within Germany.
 
-**International Organizations: Neutral Sentiment and Stabilizing Roles**
+**International Organizations as stabilizing roles**
 Entities like NATO and other international organizations show a trend of neutral sentiment, notably in Western narratives.
 For example, in the post-conflict Allied Forces’ heatmap, NATO maintains neutral scores, emphasizing their portrayal as stabilizing forces.
 
