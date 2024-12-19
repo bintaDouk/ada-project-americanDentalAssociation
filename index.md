@@ -155,14 +155,19 @@ Correlations for the Second World War (1937-1947)
     <div class="carousel-item">
       <iframe src='images/Q1/corr_batdeath_Military_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
+    <div class="carousel-item">
     <iframe src='images/Q1/corr_batdeath_Military&Antiwar_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
+    <div class="carousel-item">
     <iframe src='images/Q1/corr_batdeath_War_film_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
+    <div class="carousel-item">
     <iframe src='images/Q1/corr_numwars_Antiwar_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
+    <div class="carousel-item">
     <iframe src='images/Q1/corr_numwars_Disaster_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
+    <div class="carousel-item">
     <iframe src='images/Q1/corr_numwars_Thriller_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
