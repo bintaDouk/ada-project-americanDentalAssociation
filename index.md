@@ -218,21 +218,6 @@ In order to provide a quick overview of the wars we are analyzing, we provide so
 <iframe src="images\Q2\countries_Cold_War.html" width="800px" height="600px" frameborder="0" position="relative" style="display: block;">positive barplot</iframe>
 <iframe src="images\Q2\countries_Vietnam_War.html" width="800px" height="600px" frameborder="0" position="relative"  style="display: block;">positive barplot</iframe>
 
-# Examining Storytelling Variations in War Films
-While our previous analysis revealed distinct patterns in genre production across different countries, a deeper examination of narrative construction within the same genre warrants investigation. Our analysis will focus exclusively on war cinema as it provides a unique window into how different nations process, interpret, and memorialize shared historical events through film. War movies are particularly revealing because they often reflect not only a country's historical perspective but also its contemporary values, national identity, and relationship with military conflict. 
-
-We isolated war films specifically depicting our four conflicts of interest and identified their respective sides. Unfortunately, given the limited number of movies produced about the Vietnam War and the Korean War, we have decided to focus exclusively on the Cold War and World War II.
-
-<iframe src="number_of_war_movies.html" width="100%" height="800px" frameborder="0">n_movies</iframe>
-
-## Sentiment Analysis
-
-We performed a sentiment analysis on the summaries of the movies identified. This analysis helped identify the emotional tone of the summaries, determining whether they are primarily positive, negative, or neutral depending of the countries of production and the event. 
-
-<iframe src="wwii_sentiment_analysis.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
-
-
-
 ## Movies Timeline
 In this third section of the analysis, we filter the movies by looking at the summaries from the `Movies` dataset, and for each war we look to how many movies about it were released over the course of the years.
 
@@ -287,14 +272,38 @@ Moreover, we see that for the `Cold War` the largest part of the movies were pro
 Finally, for the `Vietnam War` we can see from the chart that no movies about it were released in Vietnam, only country directly involved in the war as "Side 2" in our dataset, while the movies are almost equally distributed among the various countries (as usual, exception made for the USA).
 
 
-## Portrayal of historical events accross perspectives
-This part of the Analysis will mainly focus on the sentiment associated with movies for the four specific conflicts retained earlier for ... 
-* World War II
-* Korean War
-* Cold War
-* Vietnam War
+# Examining Storytelling Variations in War Films
+While our previous analysis revealed distinct patterns in genre production across different countries, a deeper examination of narrative construction within the same genre warrants investigation. Our analysis will focus exclusively on war cinema as it provides a unique window into how different nations process, interpret, and memorialize shared historical events through film. War movies are particularly revealing because they often reflect not only a country's historical perspective but also its contemporary values, national identity, and relationship with military conflict. 
 
-TODO: add the first part with the global sentiment analysis 
+We isolated war films specifically depicting our four conflicts of interest and identified their respective sides. Unfortunately, given the limited number of movies produced about the Vietnam War and the Korean War, we have decided to focus exclusively on the Cold War and World War II.
+
+<iframe src="number_of_war_movies.html" width="100%" height="800px" frameborder="0">n_movies</iframe>
+
+## Sentiment Analysis
+
+# Word War II 
+
+We performed a sentiment analysis on the summaries of the movies identified. This analysis helped identify the emotional tone of the summaries, determining whether they are primarily positive, negative, or neutral depending of the countries of production and the event. 
+
+<iframe src="wwii_sentiment_analysis.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+
+We do observe a higher negative score which isn't surprizing, however the overlapping confidence intervals across all categories indicate that the differences between the Allied and Axis films' sentiment scores are pretty similar. However, it is surpriing to observe that the confidence intervall is much higher for the compound result. Let's observe the distribution. 
+
+<iframe src="wwii_distribution_compound.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+
+The distribution is pretty similar among the two samples, however the sample sizes are imbalanced, which could contribute to the variability observed, particularly for Side 2. We also conducted a T-test that confirmed that they were no significant difference between the two sides. 
+
+# Cold War 
+
+
+When comparing the results with those from Cold War-themed movies, we found that the sentiment analysis scores were remarkably consistent across both historical contexts. This suggests that the emotional tone in the plot summaries of war genre movies remains largely stable, regardless of the specific conflict being depicted. As with WWII movies, no significant differences were observed between the two sides for neutral, positive, or negative sentiment scores. While a difference in the compound score was noted, it is likely attributable to sample size limitations rather than a meaningful divergence in sentiment. 
+
+<iframe src="global_sentiment_analysis.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+
+
+It is not sufficient to draw definitive conclusions from these findings, as we cannot yet confidently determine whether there are no differences between countries in their depiction of conflicts within the movie industry. Our sample size was relatively small, and relying solely on plot summaries may not have been the most effective approach for capturing nuanced differences. In the next section, we will adopt a more qualitative approach, focusing not on the overall sentiment of the global plot but on the sentiment associated with specific entities. This shift in methodology aims to provide deeper insights and address potential limitations in our initial analysis.
+
+
 ### The shifting sentiment towards organizations during a world-scale conflict.
 The way conflicts are represented in cultural narratives often reveals underlying societal attitudes, biases, and historical contexts. In this part of the study we applied entity-level sentiment analysis to entities tagged as ‘ORGANIZATIONS’ in two worldwide conflicts : World War II and the Cold War.  
 By analyzing the sentiment associated with such entities, we can uncover patterns of representation before, during and after the conflicts.   
