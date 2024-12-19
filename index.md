@@ -131,6 +131,7 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
 ## Correlations
 Correlations with number of ongoing wars
 
+<!-- First Carousel -->
 <div id="carouselcorr" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
   <div class="carousel-indicators">
@@ -167,6 +168,7 @@ Correlations with number of ongoing wars
   </button>
 </div>
 
+<!-- Second Carousel -->
 <div id="carouselcorr2" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
   <div class="carousel-indicators">
@@ -203,6 +205,7 @@ Correlations with number of ongoing wars
   </button>
 </div>
 
+<!-- Third Carousel -->
 <div id="carouselcorr3" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
   <div class="carousel-indicators">
