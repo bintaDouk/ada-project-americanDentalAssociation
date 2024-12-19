@@ -2,9 +2,9 @@
 layout: page
 title: Cinematography in Times of Crisis
 subtitle:  Exploring the Impact of Global Events on Film Genres and Public Preferences
-cover-img: /assets/img/cover_img.jpeg
-thumbnail-img: /assets/img/cover_img.jpeg
-share-img: /assets/img/cover_img.jpeg
+cover-img: /assets/img/téléchargement.jpeg
+thumbnail-img: /assets/img/téléchargement.jpeg
+share-img: /assets/img/téléchargement.jpeg
 use-site-title: true
 ---
 <style>
