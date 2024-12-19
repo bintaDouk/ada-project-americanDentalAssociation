@@ -668,6 +668,8 @@ Entities like NATO and other international organizations show a trend of neutral
 For example, in the post-conflict Allied Forces’ heatmap, NATO maintains neutral scores, emphasizing their portrayal as stabilizing forces.
 
 #### Cold War
+The Cold War was as much a battle of ideologies as it was a geopolitical and military standoff. Sentiment analysis applied to organizational entities reveals the nuanced ways in which each side—Western Bloc and Eastern Bloc—portrayed military, political, and international organizations.
+
 ##### Western Block Heatmaps 
 <!-- Create the buttons -->
 <button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('cw_Before1')">Western Block, Before</button>
@@ -683,14 +685,11 @@ For example, in the post-conflict Allied Forces’ heatmap, NATO maintains neutr
 
 <iframe class="toggle-frame" src="heatmap_5.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_Before2" style="display: block;">positive barplot</iframe>
 <iframe class="toggle-frame" src="heatmap_6.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_After2" style="display: block;">positive barplot</iframe>
-test test grrr paww
 
+On the Western Bloc side during the Cold War tensions, sentiment towards entities is mixed, with a noticeable inclination toward more negative sentiments. For instance, organizations such as the KGB and Communist Party exhibit both positive and negative sentiment scores. Interestingly, some US-related entities also receive negative sentiments, reflecting a nuanced narrative. This suggests that, despite the overarching hostility depicted in media towards the opposing bloc, the relatively freer speech in the West allowed for more balanced or even positive portrayals in certain instances. Furthermore, military organizations and concepts, such as Military and DEFCON, are often associated with negative sentiments, reflecting the pervasive anxiety about the potential for imminent conflict.
 
-#### Cold War 
-The Cold War was as much a battle of ideologies as it was a geopolitical and military standoff. Sentiment analysis applied to organizational entities reveals the nuanced ways in which each side—Western Bloc and Eastern Bloc—portrayed military, political, and international organizations.
+After the Cold War, sentiments toward Soviet bloc-related entities become less negative as tensions subside, reflecting a gradual easing of hostility in narratives.
 
+In contrast, the Soviet bloc exhibits a universally positive representation of its allied entities, such as the Bolshevik Party, which achieves a notably high positive sentiment (~0.8). This consistent positivity highlights the influence of controlled narratives within the Soviet bloc, where media operated under stricter guidelines and presented a narrower, more favorable lens on allied organizations.
 
-
-<iframe class="toggle-frame" src="heatmap_4.html" width="800px" height="900px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="heatmap_5.html" width="800px" height="900px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
 
