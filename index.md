@@ -323,9 +323,6 @@ World War II
       <iframe src='images/Q1/WW2_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/WW2_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
       <iframe src='images/Q1/WW2_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
