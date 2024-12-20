@@ -2,9 +2,9 @@
 layout: page
 title: Cinematography in Times of Crisis
 subtitle:  Exploring the Impact of Global Events on Film Genres and Public Preferences
-cover-img: /assets/img/téléchargement.jpeg
-thumbnail-img: /assets/img/téléchargement.jpeg
-share-img: /assets/img/téléchargement.jpeg
+cover-img: /assets/img/téléchargement.jpg
+thumbnail-img: /assets/img/téléchargement.jpg
+share-img: /assets/img/téléchargement.jpg
 use-site-title: true
 ---
 <style>
@@ -41,7 +41,7 @@ use-site-title: true
 </style>
 ## Background and motivation
 Ever since the begining of cinematography, movies have often been a reflection of reality. Whether it is through romance stories or tragedies, fiction has been used as a way to mirror real life situations.
-This tendency also applies to crises, as they are major events that impact the socio-economic status of the world, as well as peoples' daily lives. It is only natural to ask ourselves how these very particular events are mirrored in movies, and how well these depictions are received by the public.
+This tendency also applies to crises, as they are major events that impact the socio-economic status of the world, as well as peoples' daily lives. It is only natural to ask ourselves how these very particular events are mirrored in movies, and how well these depictions are received by the public. In our study we focus on interstate wars and discover their influence of genre production and public preference.
 
 Using the CMU Movie Dataset, we will answer the following research questions:
 1. How do global crises and significant world events shape film production, themes, and public preferences?
@@ -56,7 +56,21 @@ Our analysis starts from three main datasets:
 After some quick initial filtering, we merged the CMU and IMDb datasets to generate a bigger `Movies` dataset better suited for our needs, and we filtered the `Wars` datasets to only contain the conflicts relevant to the time period corresponding to the movies we are considering.   
 On top of that, we decided to focus our analysis on a reduced set of wars, being `World War II`, `Korean War`, `Cold War` and `Vietnam War`, which from a quick initial analysis seemed to have the largest related information in the movies dataset.
 
-## Inspect genre groups
+## Inspecting genre groups
+
+The analysis in the first section examines how various wars influenced the production of different movie genres over time. By analyzing genre proportions, correlations with war-related metrics, co-occurrence networks, and significant changes in genre distributions, this analysis uncovers key insights about the interplay between historical conflicts and cinema production.
+
+To lead a preliminary inspection of war-related genres and chose specific wars for further analysis, three groups of of a few specfic genres were formed: war-related genres, political genres, dystopian genres.
+
+**Military** (War-related) genres: War Film, Antiwar, Superhero, Spy
+
+**Political** genres: Political Thriller, Political Satire, Political Cinema, Political Drama
+
+**Dystopian** genres: Dystopia, Apocalyptic and Postapocalyptic Fiction
+
+The war-related genres are the ones that we identified eariler as genres either related to war or military propaganda. Political genres were chosen to reflect the geopolitical side of wars. Dystopian and Apocalyptic genres were chosen as these genres often talk about war-related aplocalypses as well as dystopian societies based on military rule.
+
+In the plots below, the proportion of movies in a genre group released each year (in relation to the total movies released) are presented for the whole timeline. 
 
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
@@ -94,191 +108,137 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
   </button>
 </div>
 
-<div class="container my-4">
-    <!-- Second Carousel -->
-    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <iframe src="images/Q1/trend_batdeath_military.html" frameborder="0" width="100%" height="600"></iframe>
-            </div>
-            <div class="carousel-item">
-                <iframe src="images/Q1/trend_batdeath_antiwarmilitary.html" frameborder="0" width="100%" height="600"></iframe>
-            </div>
-            <div class="carousel-item">
-                <iframe src="images/Q1/trend_batdeath_political.html" frameborder="0" width="100%" height="600"></iframe>
-            </div>
-            <div class="carousel-item">
-                <iframe src="images/Q1/trend_batdeath_dystopian.html" frameborder="0" width="100%" height="600"></iframe>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
+From the military genre production trends, we can see that the biggest spike can be associated with WW2 - it reached its peak in 1943, around the middle of the war. However, some other noticeably spikes happened in 1966 and 1958, a year in the beginning of a full-scale Vietnam War and a year when it was still a Civil War with some indirect involvement of other countries. However, the Cold War was also ongoing at the time. Since the Cold War's official timeline is around 40 years, it is difficult to associate specific spikes with it without inspecting the timeline of the smaller events within it. Although we can note that some signigicant events like Cuban Missile Crisis and Prague Spring happened at that time, they are not included in this analysis.
+In the political genres figure we observe a lot of oscillation, so the only observation we can make from the plot is the overall growth of the political genres from 1930s to 1990s.
+In the dystopian genres, the trend is pretty stable over time except for the two noticeably peaks in 1974 and 1990, at the end Vietnam War and at the end of the Cold War.
 
-## Correlations
-Correlations with number of ongoing wars
+We were interested in the times when spikes appeared for each genre group. Thus, the peaks for these genre groups were inspected, and a list of events in the 2-year window around the peak year was formed to analyze further. The events that were chosen appeared in at least two of the final lists and had more than 1000 movies released in their timeline (a sperate group of War movies without the Antiwar was created as well, since the movies specifically labelled Antiwar are of a different nature). The comprehensive list of events to analyzed was yielded:
+
+- `World War II`
+- `Vietnam War`
+- `Second Laotian War`
+- `Cold War`
+- `Iran-Iraq War`
+
+Note, however, that the Second Laotian War's timeline is contained withing the timeline of the Vietnam War, so the analysis is conducted for the Vietnam War only but can be applied to both.
+
+## Finding Correlations
+In this section, for the chosen wars' time window (the timeline with a 2 year window before and after), we inspected the correlation of the genres released with the number of ongoing wars per year and yearly battle deaths. The inspection was conducted for the genres groups mentioned before. And moreover, for these genres:
+**War film, Spy, Superhero, Romance Film, Romantic drama, Family Film, Romantic comedy, Comedy, Fantasy, Thriller, Horror, Drama, Social issues, Antiwar, Disaster**. 
+
+Moreover, another genre group was created:
+**Positive** genres: Family Film, Romance Film, Romantic Comedy, Fantasy, Romantic Drama.
+
+The range of genres was increased in order to include the more widespread genres, such as Drama, and inspect negative genres, such as Horror and Thriller, and postive genres. One of the objectives of the analysis was to identify not just correlation with war-related genres or horror-related genres but with positive genres that are associated with entertainemnt and/or escapism.
+
+The plots below showcase the scatter plots for genre proportions vs. number of ongoing wars or vs. battle deaths. The plots also contain the Pearson correlation value, the p-value and the OLS line. For the analysus the condifence interval of 95% (alpha = 0.05) was chosen. The plots presented were sorted based on the p-value below 0.05 and correlation value above 0.45.
+
+**Correlations for the Second World War (1939-1945)**
+
+*Battle Deaths*
+
+Family Film: correlation value = -0.72, p-value = 0.0167, R-squared = 0.524.
+
+Horror: correlation value = 0.84, p-value = 0.00137, R-squared = 0.6976.
+
+Drama: correlation value = -0.6089, p-value = 0.0468, R-squared = 0.37.
+
+ We can infer that as the battle deaths grow, the number of family films produced decreases while horror movies' production grows. Drama decreases with the growth but this model's fit is weak. Note, however, that the increased battle deaths for World War II might skew the results.
 
 <!-- First Carousel -->
-<div id="carouselcorr" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselcorrwar" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselcorr" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselcorr" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselcorr" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselcorr" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselcorrwar" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselcorrwar" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselcorrwar" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselcorrwar" data-bs-slide-to="3" aria-label="Slide 4"></button>
   </div>
 
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='images/Q1/corr_numwars_1.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_Drama_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_2.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_Family_Film_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_3.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_4.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_batdeath_Horror_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
   <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorrwar" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorrwar" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
 
-<!-- Second Carousel -->
-<div id="carouselcorr2" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselcorr2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselcorr2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselcorr2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselcorr2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
+**Correlations for the Vietnam War (1965-1975)**
 
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/corr_numwars_5.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_6.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_7.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_8.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
+*Number of Wars*
 
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr2" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr2" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+Family Film: correlation value = -0.6108, p-value = 0.015, R-squared = 0.373
 
-<!-- Third Carousel -->
-<div id="carouselcorr3" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselcorr3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselcorr3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselcorr3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselcorr3" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
+*Battle Deaths*
 
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/corr_numwars_9.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_10.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_11.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_12.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
+Fantasy: correlation value = -0.5166, p-value = 0.0486, R-squared = 0.2669
 
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr3" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr3" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+Due to low values of R-squared, it is hard to make conclusions but we may say that the number of Family Films produced decreases as the number of wars increases. While Fantasy Films produciton decreases with the increase of Battle Deaths.
 
-Correlations with battle deaths
+<script>
+function showFrame(frameId) {
+  // Get all iframes with the toggle-frame class
+  var frames = document.getElementsByClassName('toggle-frame');
 
-<div id="carouselcorr4" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
+  // Hide all iframes with the toggle-frame class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
 
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/corr_batdeath_1.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_2.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_3.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_4.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
 
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr4" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr4" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+<!-- Create the buttons -->
+<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('corrvietbat')">Battle Deaths</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('corrvietnum')">Number of Wars</button>
+
+<iframe class="toggle-frame" src="images/Q1/corr_batdeath_Fantasy_1963-1977.html" width="800px" height="600px" frameborder="0" position="relative" id="corrvietbat" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/corr_numwars_Family_Film_1963-1977.html" width="800px" height="600px" frameborder="0" position="relative" id="corrvietnum" style="display: block;"></iframe>
+
+**Correlations for the Cold War (1949-1989)**
+
+*Number of Wars*
+
+Romantic Comedy: correlation value = -0.4506, p-value = 0.00189, R-squared = 0.203
+
+The R-squared is quite low, so it is hard to make a concrete conclusion but the suggestion is that the Romantic Comedy production decreases as the number of wars grows.
+
+<iframe src='images/Q1/corr_numwars_Romantic_comedy_1947-1991.html' width="100%" height="600" frameborder="0"></iframe>
+
+**Correlations for the Iran-Iraq War (1980-1988)**
+
+None of the correlations yield a small enough p-value.
+
+**Correlations for the timeline (1950-2012)**
+
+Correlations were first calculated for the full timeline of 1931-2012 and yilded very low p-values for War Film, Military Movies, Military & Antiwar Movies. However, most battle deaths recorded are below 300,000, while the Battle Deaths for the WW2 are recorded as more than 2 million yearly (approximation done by dividing the duration of a war by the total battle death). So these values will not be reported as significant, even though it can be said that the proportion of War movies had the largest spike at the time. Consequently, a cutoff of 1950 was created since the spike in battle deaths during the WW2 significantely affected the results.
+
+*Number of Wars*
+
+Superhero: correlation value = -0.4841 5.8151e-05, R-squared = 0.234
+
+Romantic comedy: correlation value = -0.5606, p-value = 1.7646e-06, R-squared = 0.314
+
+The R-squared are low again but for Romantic comedy it may be said that it decreases in production as the number of wars increases.
 
 <div id="carouselcorr5" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
@@ -292,16 +252,10 @@ Correlations with battle deaths
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='images/Q1/corr_numwars_5.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_Superhero_1950-2012.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_6.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_7.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_8.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_Romantic_comedy_1950-2012.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -316,208 +270,223 @@ Correlations with battle deaths
   </button>
 </div>
 
-<div id="carouselcorr6" class="carousel slide" data-bs-ride="carousel">
+**Correlations for the the End of 20th - Beginning of 21st Century**
+
+*Number of Wars*
+
+Social Issues: correlation value = -0.5008, p-value = 0.0149, R-squared = 0.2508
+
+Political Movies: correlation value = -0.548, 0.0067, R-squared = 0.3
+
+The R-squared are low again but for Romantic comedy it may be said that it decreases in production as the number of wars increases.
+
+<div id="carouselcorr4" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselcorr6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselcorr6" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselcorr6" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselcorr6" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="3" aria-label="Slide 4"></button>
   </div>
 
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='images/Q1/corr_batdeath_9.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_Social_issues_1990-2012.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_10.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_11.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_12.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numrwars_Political_1990-2012.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
   <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr6" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr4" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr6" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr4" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
 
-Plotting the network
+To sum up, while the model often fit weakly or moderately, we can note a few things:
+
+As the number of wars increased, the Family Film production decreased during the times of the Vietnam War, the Romantic comedy production decreased during the second half of the 20th century and for most of the timeline as well. Plotical Movies and Social Issues films decreased for the 1990-2012 timeline.
+As the number of battle deaths increased, Family Film, Horror, and Drama decreased for the WW2 timeline, but result is skewed. Fantasy decreased for the Vietnam War timeline.
+All in all, we see a decrease for all kinds of movie genres with the increase of number of ongoing wars and battle deaths. We can note the Family Film and Romantic comedy appear more than once, which could suggest that the wars affect their production greatly.
+
+**Plotting the network**
+
+For some inspection, the network for War Film was created, which is the movie genres that were mentioned together with War Film more often. Some of the observations that can be made from the network are that War Films are often associated with historical or documentary films, with action films, and sometimes with political genres. What is interesting for our analysis is that Comedy, Romance films and Romantic drama often go together with War Films, thus, our objective to inspect the production of more entertaining and escapistic genres may not be supported in full by inspecting these "positive" genres, as they are often included in movies about war as well.
+
 <iframe src="images/Q1/network.html" frameborder="0" width="100%" height="600"></iframe>
 
 ## Significant Changes in Genres for the Chosen Wars
-<iframe src="images/Q1/significantchange_WW2.html" frameborder="0" width="100%" height="600"></iframe>
-<iframe src="images/Q1/significantchange_ColdWar.html" frameborder="0" width="100%" height="600"></iframe>
-<iframe src="images/Q1/significantchange_Vietnam.html" frameborder="0" width="100%" height="600"></iframe>
-<iframe src="images/Q1/significantchange_Iran-Iraq.html" frameborder="0" width="100%" height="600"></iframe>
+
+Significant changes in genre distribution were defined for the chosen wars by using chi-square testing. The window before and after the war defined as 5 years.
+
+**World War II**
+
+Some of the changes can be associated with cinematography trends: Back and White, Film Noir, PreCode (Pre-Code Hollywood was an era in the American film industry that occurred between the widespread adoption of sound in film in the late 1920s), and World Cinema. However, it is important to note that the origins of Film Noir as a genre included dark themes and after the war the genre grew and started depicting moral ambiguity, physchological effects of war and other introspection and reflection on the war.
+
+Some interesting observations here also incldue that the War Film genre increases greatly during the war but in the aftermath drops to its previous level. A similar thing happened to the Horror genre - moreover, its production after the war drops to lower than before the event. Thriller and Psychological Thriller, on the other hand exprience growth during and then after the war as well. The production of Drama drops during the war and increases back afterwards. Propaganda movies were on an extreme rise during the war, which aligns with the nature of the World War II and propagandistic goals of Nazi Germany.
+
+**Cold War**
+
+As discussed earlier, the Cold War spans a very large timeline, moreover the "before" time for it includes the World War II, so it is hard to make any concrete analysis from the resulting graph. Most of the changes are explained the trends in cinematography. We can say, however, that the War Films experienced a drop after the Cold War ended.
+
+**Vietnam War**
+
+Here we once again see an increase in Thriller movies production and here it is joined by Action movies. Interestingly, the War Film genre has not experienced significant changes, even though its peaks were identified to happen at the time as well. Romantic comedy genre has significantly decreased and noteably, for some timelines we have seen before a correlation - that Romantic comedy production decreases as the number of wars grows. It is interesting to see a great increase in Matrial Arts Film, which could be affected by the events of the war, as Martial Arts are usually associated with Asian culture.
+Genres like British New Wave and Kitchen Sink Realism (film, whose protagonists usually could be described as "angry young men" who were disillusioned with modern society) dropped in production. These genres talked about social issues but were weakly related to specific wars.
+
+**Iran-Iraq War**
+
+For the timeline of the Iran-Iraq, it seems like most of the significant genre production changes were influenced by trends in cinematography and new genres originating at the time. This could also be explained by the fact that this war included much less countries than the previous war and lacked the involvement of Western countries and the United States specifically who dominate the movie market.
+
+<script>
+function showFrame(frameId) {
+  // Get all iframes with the toggle-frame class
+  var frames = document.getElementsByClassName('toggle-frame');
+
+  // Hide all iframes with the toggle-frame class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+<!-- Create the buttons -->
+<button class="button" style="margin: 0.5px 0; width: 20%; margin-left: 10px; margin-right: 5px" onclick="showFrame('ww2change')">WW2</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('coldchange')">Cold War</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('vietchange')">Vietnam War</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('iraniraqchange')">Iran-Iraq War</button>
+
+<iframe class="toggle-frame" src="images/Q1/significantchange_WW2.html" width="1000px" height="600px" frameborder="0" position="relative" id="ww2change" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/significantchange_ColdWar.html" width="1000px" height="600px" frameborder="0" position="relative" id="coldchange" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/significantchange_Vietnam.html" width="1000px" height="600px" frameborder="0" position="relative" id="vietchange" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/significantchange_Iran-Iraq.html" width="1000px" height="600px" frameborder="0" position="relative" id="iraniraqchange" style="display: block;"></iframe>
+
 
 ## Specific Genres for the Chosen Wars
-World War II
-<div id="WW2" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#WW2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#WW2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#WW2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#WW2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
+**World War II**
 
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/WW2_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/WW2_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/WW2_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/WW2_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
+Military Genres:
+For military mvoies we can see an almost normal distribution in the plot for World War II. The War Film genre especially looks like it follows normal distribution with its peak in 1943. The spy movies also were at the highest in the middle of the war (1942 and 1943). 
 
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#WW2" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#WW2" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+Positive Genres:
+The positive genres seem to be quite stable over the timeline with a vary similar total proportion for each year. 
+
+**Cold War**
+
+Military Genres:
+Multiple the events of signigicant importance within the Cold War happened in the 1950s and 1960s, which could explain some increase in the War Film genre. However, as we know, the Vietnam War also starts in the 1960s, so the results can be affected by both of these. Another rise closer to the 1980s, for example, could be associated with the war in Afghanistan, which is associated with the Cold War as well. However, these observartions are highly theoretical and could be a base for a more specific Cold War analysis in another study.
+
+Positive Genres:
+Once again we see that the positive genre production is stable over time even for such a extensive timeline, except for a drop from around 1966, which will be mentioned later.
+
+**Vietnam War**
+
+Military Genres:
+From 1963 to 1971 it seems like the Spy genre is close to normal distribution, which could be related to the nature of the Vietnam War. It is important to note that the U.S. was involved in the Civil War and events in Vietnam before it officially joined it. The War Film genre was quite stable in the beginning and dropped in the middle.
+
+Positive Genres:
+Interestingly, as mentoined earlier here the Positive Genres are not stable and they slowly decrease in produciton up until 1974, mostly due to the Comedy genre. Thus, it could be hypothesized that this war specifically had an unusual effect on the Comedy genre.
+
+**Iran-Iraq War**
+
+Military genres:
+The production of War Film had a noticeably peak in 1979 (note: Soviet invasion in Afghanistan) but stayed approximately the same for the other years. So we can assume the Iran-Iraq War did not affect the genre greatly.
+
+Dystopian genres:
+There is definitely a noticeable increase in the genre of Dystopia in the 1990 but it is hard to tell if it influenced by cinematographic trends, the war or other events.
+
+Positive Genres:
+The positive genres have stable production over time.
+
+Most of the time the positive genres have the same proportion across the timeline with an exception of a Vietnam War or the 1960s and 1970s (included multiple political events within the Cold War such as Cuban Missile Crisis, Fall of the Berlin Wall, Prague Spring). We can conclude that positive events are usually stable in production and are not highly affected by wars. However, the found exception is an interesting observation that could be analysed further.
+The political genres do not lead to any conclusions and contain a lot of oscillations. The conclusion is that the political genres are not affected by interstate wars but could be affected by other global events.
+The dystopian genres also do not lead to any specific conclusion and do not seem to be influenced by wars. We can also note that these genres are quite modern and lack in produciton in the 20th century.
+The military genres often seemed to follow a normal distribution during the big 20th century wars. This implies that military-related genres rise as the war starts, peak in the middle of the war and decrease again. However, for Iran-Iraq War the pattern was not identified, which could be due to the involvement of Western Countries and the scale of the event.
+
+<script>
+  let currentVisibleSet = null; // To track the currently visible set of graphs
+
+  function showGraphs(id) {
+    // Hide the currently visible set, if any
+    if (currentVisibleSet) {
+      currentVisibleSet.style.display = 'none';
+    }
+
+    // Show the selected set of graphs
+    const selectedSet = document.getElementById(id);
+    if (selectedSet) {
+      selectedSet.style.display = 'block';
+      currentVisibleSet = selectedSet; // Update the currently visible set
+    }
+  }
+
+  // Initially hide all sets
+  document.addEventListener('DOMContentLoaded', () => {
+    const graphSets = document.querySelectorAll('.graph-set');
+    graphSets.forEach(set => {
+      set.style.display = 'none';
+    });
+  });
+</script>
+
+<button class="button" style="margin: 0.5px 0; width: 20%; margin-left: 10px; margin-right: 5px" onclick="showGraphs('WW2')">WW2</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showGraphs('Cold')">Cold War</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showGraphs('Vietnam')">Vietnam War</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showGraphs('Iran')">Iran-Iraq War</button>
+
+<div id="WW2" class="graph-set" style="display: none;">
+  <iframe src="images/Q1/WW2_barplot_militaryandantiwar.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/WW2_barplot_political.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/WW2_barplot_positive.html" width="1000" height="600" frameborder="0"></iframe>
 </div>
 
-
-The Cold War
-<div id="Cold" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#Cold" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#Cold" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#Cold" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#Cold" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
-
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/ColdWar_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/ColdWar_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/ColdWar_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/ColdWar_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#Cold" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#Cold" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div id="Cold" class="graph-set" style="display: none;">
+  <iframe src="images/Q1/Cold_War_barplot_militaryandantiwar.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Cold_War_barplot_political.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Cold_War_barplot_positive.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Cold_War_barplot_dystopian.html" width="1000" height="600" frameborder="0"></iframe>
 </div>
 
-
-The Vietnam War
-
-<div id="Vietnam" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
-
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/Vietnam_War_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Vietnam_War_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Vietnam_War_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Vietnam_War_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#Vietnam" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#Vietnam" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div id="Vietnam" class="graph-set" style="display: none;">
+  <iframe src="images/Q1/Vietnam_barplot_militaryandantiwar.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Vietnam_barplot_political.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Vietnam_barplot_positive.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Vietnam_barplot_dystopian.html" width="1000" height="600" frameborder="0"></iframe>
 </div>
 
-
-The Iran-Iraq War
-
-<div id="Iran" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#Iran" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#Iran" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#Iran" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#Iran" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
-
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/Iran-Iraq_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Iran-Iraq_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Iran-Iraq_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Iran-Iraq_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#Iran" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#Iran" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div id="Iran" class="graph-set" style="display: none;">
+  <iframe src="images/Q1/Iran-Iraq_barplot_militaryandantiwar.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Iran-Iraq_barplot_political.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Iran-Iraq_barplot_positive.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Iran-Iraq_barplot_dystopian.html" width="1000" height="600" frameborder="0"></iframe>
 </div>
 
+This study’s first research question examined how wars influenced the production of various movie genres, revealing distinct trends. Military genres, such as War Films and Spy Films, often followed a cyclic pattern, peaking during major conflicts like World War II and the Vietnam War before declining afterward. Positive genres, including Comedy and Family Films, generally remained stable, serving as escapism, though prolonged conflicts like the Vietnam War disrupted their production. Political and dystopian genres showed less consistent trends, suggesting they are more influenced by broader cultural or geopolitical factors.
 
-## World Maps for Analyzed Conflicts
-In order to provide a quick overview of the wars we are analyzing, we provide some initial plots, showing the world map for the opposing countries for each one of the 4 conflicts:
+Significant changes in genre distributions during key wars provided further insights. World War II saw spikes in War Films and propaganda, while Horror Films rose during the war but declined afterward. The Vietnam War spurred increases in Thrillers and Action Films, alongside a notable drop in Romantic Comedies. The Cold War’s extended timeline diluted clear trends, though War Films declined post-conflict. These findings highlight the complex interplay between wars and cinematic trends, particularly for military and positive genres, offering a foundation for further exploration in subsequent research questions.
+
+The identified trends in genre production are global and do not offer nuance on the specific countries involved in the war and their sides. Consequently, further, we will analyze film production in relation to specific countries.
+
+## Geopolitical Analysis of Conflicts
+This section of our research is devolved to the research question: `How do movie genre preferences differ between countries in conflict or those experiencing similar global events?`, in which we investigate variations in genre trends across nations, focusing on contrasts during political tensions and on how different nations respond to similar historical events.      
+
+In order to provide a quick overview of the wars we are analyzing, we provide some initial plots, showing the world map for the opposing countries for each one of the 4 conflicts:   
+* World War II
+* Korean War
+* Cold War
+* Vietnam War
+This distinction between `Side 1` (Red) and `Side 2` (Blue) will be important for a deeper understanding of the following sections.   
 
 <iframe src="images\Q2\countries_World_War_II.html" width="800px" height="600px" frameborder="0" position="relative"  style="display: block;">positive barplot</iframe>
 <iframe src="images\Q2\countries_Korean_War.html" width="800px" height="600px" frameborder="0" position="relative" style="display: block;">positive barplot</iframe>
@@ -525,51 +494,25 @@ In order to provide a quick overview of the wars we are analyzing, we provide so
 <iframe src="images\Q2\countries_Vietnam_War.html" width="800px" height="600px" frameborder="0" position="relative"  style="display: block;">positive barplot</iframe>
 
 ## Movies Timeline
-In this third section of the analysis, we filter the movies by looking at the summaries from the `Movies` dataset, and for each war we look to how many movies about it were released over the course of the years.
+Another plot helpful in the understanding of the setting of the analysis is the following timeline, which aims to show the number of movies produced over the course of the years relative to each one of the considered conflicts:   
 
 <iframe class="toggle-frame" src="images\Q2\movies_timeline.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
 
-The plot shows a large area associated to movies related to `World War II`, much larger than that of all other conflicts combined. This highlights the influence a conflict of such scale has had on the world even further in the future.   
+The plot shows a large area associated to movies related to `World War II`, much larger than that of all other conflicts combined. This highlights the influence a conflict of such scale has had on the world, even further in the future.   
 A more in-depth inspection of the graph shows how, despite the general movies trend are characterized by an overall increase in movies produced every year, the peak in production of WWII movies has peaked during the conflict itself, to then decrease gradually over time to then settle between 10-15 movies a year in the XXI century.   
 Movies on the `Vietnam War` were not produced inconsistently across all years starting from the war, reaching their peak in 2005 with 9 movies.   
 The `Korean War` has had its highest movies production in the period right after the war, in the 1950s, after which it hasn-t received much attention in the cinematographic world, achieving at most 3 movies per year ever since.   
 Finally, contrary to our expectations, the `Cold War` itself didn't get much attention during the course of the years, with no more than 4 movies produced in a given year making it the lowest in our analysis.
 
-## Comparative Genre Analysis of Movies
-In this section we perform a comparative analysis between the countries on either side of the conflicts, by analyzing the genre distribution of movies filtered by some specific criteria.      
-First we provide an analysis of the geographical connotation of the influence of these events on the movies produced, by filtering our dataset based on the movies released in a historical period around each of the analyzed war, and check what is the movie genre of the movies depicting countries from either side of the conflict.   
-We plot our results in two barplots, one for each side of the war, each one showing not only the genre distribution for that period of time but also the genre distribution over the whole dataset, to provide through comparison additional information about the way this sentiment changed overtime.   
-
-<iframe class="toggle-frame" src="images\Q2\genres_year_World War II.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="images\Q2\genres_year_Korean War.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="images\Q2\genres_year_Cold War.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="images\Q2\genres_year_Vietnam War.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-
-During `World War II`, Drama and Black-and-White films dominated the genre landscape on both sides. On Side 1, genres like War Films, Adventure, and Romance Films were prominent, reflecting themes of heroism and human struggle. On Side 2, Propaganda Films and Combat Films emerged, alongside Thrillers and Costume Dramas, showcasing narratives aligned with wartime efforts and cultural expression. Compared to their total distributions, both sides saw significant spikes in war-focused genres, with Side 2 emphasizing propaganda and Side 1 highlighting wartime romance and heroism.   
-During the `Korean War`, Drama remained the top genre for both sides, but their focuses diverged slightly. On Side 1, there was a strong emphasis on Romance Films and Black-and-White films, along with notable contributions from Adventure and War Films. Meanwhile, Side 2 leaned more into Thriller, Combat Films, and Costume Drama, highlighting themes of conflict and cultural representation. Compared to their overall genre distributions, both sides showed increased focus on war-related genres, with Side 1 emphasizing romanticized narratives and Side 2 reflecting more action-driven storytelling.   
-During the `Cold War`, Drama dominated both sides, reflecting its enduring role in storytelling. On Side 1, genres like Thriller, Action, and War Films were significant, alongside a notable presence of Political Drama and Science Fiction, which may mirror societal tensions of the time. On Side 2, Spy films and Thrillers stood out more, alongside Period Dramas, suggesting themes of espionage and historical reflection. Compared to the overall dataset, both sides experienced a spike in war-related and suspense genres during the Cold War, aligning with its geopolitical anxieties.   
-The `Vietnam War` era saw Drama as the dominant genre on both sides. On Side 1, genres like Action, Thriller, and War Films took center stage, emphasizing the conflict's intensity. Meanwhile, Side 2 also featured Thriller prominently but included genres like Comedy and Political Drama, reflecting a mix of conflict-focused and escapist narratives. Compared to the overall dataset, both sides saw an increased emphasis on war and political genres during this period, with Side 2 incorporating more variety in tone through comedy and satire.   
-
-A second analysis was performed by focusing instead on movies depicting the war, filtered from our original dataset by looking for the names of the war (opportunely cleaned). Once again we analyze the difference in distribution between various genres, but this time the distinction between the two sides is done by looking at the country the movie is produced in.
-
-<iframe class="toggle-frame" src="images\Q2\genres_summary_World War II.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="images\Q2\genres_summary_Korean War.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="images\Q2\genres_summary_Cold War.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-
-
-A fisrt thing easy to notice is the fact that for both `Cold War` and `Korean War` one side has much fewer movies compared to the other , while for the `Vietnam War` not enough movies were found for one of the two sides, hence no plot was produced.   
-This leads to a the results relative to these plots less significant overall, but we decided to still mention them for completeness.   
-`World War II` movies prominently feature Drama, War Films, and Period Pieces across both sides. Side 1 strongly highlights Drama, War Films, and Black-and-White genres, emphasizing the historical and serious tone of the conflict. Side 2 includes World Cinema, Japanese Movies, and Period Pieces, reflecting regional diversity in storytelling. Compared to the overall dataset, genres such as Period Piece and Black-and-White are significantly elevated, underscoring the historical importance and widespread cinematic coverage of World War II.   
-Movies about the `Korean War` highlight Drama, War Films, and Action on both sides. Side 1 emphasizes Drama as the leading genre, with War Films and Action genres also receiving considerable attention. On Side 2, Chinese Movies and World Cinema stand out, reflecting regional influences and storytelling traditions. Compared to the total dataset, War Films and Chinese Movies gain prominence, showcasing the somber tone and regional cinematic focus associated with the Korean War.   
-Movies about the `Cold War` display a strong focus on Thriller, Spy, and Action genres. On Side 1, Drama and Thriller dominate, with notable emphasis on Spy films reflecting political tension and espionage themes. On Side 2, Thriller and Spy genres stand out even more prominently, with Action Thrillers receiving a significant share. Compared to the overall dataset, genres such as Spy and Political Thriller become far more prevalent, capturing the paranoia and secrecy characteristic of the Cold War.   
-
 ## Geographical Analysis of Movie Production
-This final section of geographical analysis is made through the use of sunburst charts, which show how many movies about each war were produced by either side, entering in details of the single countries from either (or neither) side.   
+The final introductive plot of this section is a sunburst chart which depicts for each war where the movies obtained by the previous filtering are produced, using the same division between `Side 1` and `Side 2` as in the section for `World Maps for Analyzed Conflicts`.   
+This section is mainly aimed at depicting a comparison between the way the opposing countries in the war (as well as the ones not directly involved) were influenced by the conflicts, in terms of a purely quantitative rather than qualitative analysis.   
+For each of the following plots, the `Red` section corresponds to `Side 1`, the `Blue` one to `Side 2` and the `Green` one to movies produced in `other countries`.
 
-<iframe class="toggle-frame" src="images\Q2\country_piechart_World War II.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="images\Q2\country_piechart_Korean War.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="images\Q2\country_piechart_Cold War.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
-<iframe class="toggle-frame" src="images\Q2\country_piechart_Vietnam War.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="images\Q2\sunburst_World War II.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="images\Q2\sunburst_Korean War.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="images\Q2\sunburst_Cold War.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="images\Q2\sunburst_Vietnam War.html" width="800px" height="600px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
 
 A comment which can be made for each of these graphs is that United States take up the largest slice of the chart divided by countries, and this is largely due to the fact that the United States contribute in the largest amount to all movies produced, regardless of the topic.    
 Entering more in detail, regarding `World War II`, we can see that the largest forces of the conflict lead the movie production, with the USA having released more than 400 movies, the UK more than 100 and countries such as France, Germany, Italy and Japan all with more than 20 movies each. On top of this, the massive influence of the conflict can also be seen from the large number of smaller countries having released some movies about it, with movies released in more than 50 countries in total!   
@@ -577,6 +520,37 @@ Once again, for the `Korean War`, most of the movies were produced by the USA, b
 Moreover, we see that for the `Cold War` the largest part of the movies were produced by countries not directly involved in the conflict, showing how such a conflict has impacted the whole world and not only the two opposing sides. As stated before, the USA contribute to the largest part of the movies, while Russia, despite being one of the two involved countries, only amounts to a single movie in our chart, surpassed by the large european countries such as Germany, UK and France.   
 Finally, for the `Vietnam War` we can see from the chart that no movies about it were released in Vietnam, only country directly involved in the war as "Side 2" in our dataset, while the movies are almost equally distributed among the various countries (as usual, exception made for the USA).
 
+
+## Comparative Genre Analysis of Movies
+In this and the following sections we delve deeper in the qualitative analysis and comparison between the two sides of the conflicts, analyzing the different distribution in movie genres for different subsets of the Movies dataset.   
+Here we provide a first analysis by filtering our dataset based on the movies released in a historical period around each of the analyzed war, and check what is the movie genre of the movies depicting countries from either side of the conflict.   
+On top of that, in the barplot we also present the distribution of those same genres across movies produced in general, comparing the results obtained during the war to the frequency these genres have over time.
+
+<iframe class="toggle-frame" src="images\Q2\genres_year_World War II.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="images\Q2\genres_year_Korean War.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="images\Q2\genres_year_Cold War.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="images\Q2\genres_year_Vietnam War.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+
+A first look at the plot makes it easy to see that genres like `Drama` are the most common overall, wo we will not consider these common trends in the analysis, but we will focus more on the distinctions between the two sides and between the specific time period vs the entire dataset.   
+During `World War II`, a common trend between the two sides was the large presence of BlackandWhite movies, which is mainly to attribute to an historical reason rather than a Geopolitical one. What characeterizes this period the most is the sharp increase in War Films, which see by far the largest increase, with Spy movies being also fairly common on both sides. On top of this, genres like Adventure and Romance Films were still prominent, reflecting themes of heroism and human struggle. The most distinctive trend betwee the two sides is the presence of Propaganda Films on Side 2, alongside genres like Japanese Movies which are instead causes by a purely geographical connotation.   
+During the `Korean War`, we see once again the trend for BlackandWhite films dominating the genre landscape on both sides compared to the overall dataset, once again associated to the analyzed historical period. On Side 1, there was a strong emphasis on Romance Films and Adventure films, while Side 2 leaned more into violent themes, such as War Films (which are the most present in this reduced dataset) and Combat Films, highlighting themes of conflict and cultural representation.
+During the `Cold War`, on Side 1 genres like Adventure, ActionAdventure, and War Films show a significant increase compared to the whole dataset, while genres related to romance are less common in this period of time. On Side 2, instead, Spy films and War films stood out more, alongside Political Thrillers, suggesting themes of espionage and historical reflection, themes fairly common in the sentiment of the time.    
+The `Vietnam War` era saw a general increase in genres like Action, Thriller, and War Films, emphasizing the conflict's intensity, but the specific response of the two sides was quite different: Side 1 had a much stronger increase in genres like Crime Fiction, Horror and Disaster compared to all other subsets of data analyzed so far, underlying the climate of tension in Vietnam in particular in this period of time. Side 2, on the other hand, had changes more in line with the general trends, with Action, Adventure and War films being more present while Romance and World cinema are less common overall.   
+
+
+
+This final section of the comparative analysis between countries focuses more on the way the conflict is portrayed in movies produced in different countries. This section has a similar approach to that discussed in the section `Geographical Analysis of Movie Production`, but goes in depth analyzing the differences in genre between the two movie subsets, although this analysis often times ended up being difficult due to the limited sizes of the sub-datasets.
+
+<iframe class="toggle-frame" src="images\Q2\genres_summary_World War II.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="images\Q2\genres_summary_Korean War.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+<iframe class="toggle-frame" src="images\Q2\genres_summary_Cold War.html" width="800px" height="400px" frameborder="0" position="relative" id="positive" style="display: block;">positive barplot</iframe>
+
+The first thing to notice is the fact that for both `Cold War` and `Korean War` one side has much fewer movies compared to the other, while for the `Vietnam War` not enough movies were found for one of the two sides, hence no plot was produced. This leads to the results relative to these plots less significant overall, but we decided to still mention them for completeness.   
+The plot for the `Cold War` shows lines of regular heigths in the histogram, due to the small amount of movies plotted. Other than this, the trends in the plot are to be expected, with genres like Thriller and Spy being the most represented in both sides, but a weird-to-explain entry is the presence of Comedy films on Side 1.   
+Movies about the `Korean War` show much more different genres on Side 1, while on Side 2 we see a strong geographical component in the genres, with Chinese and Japanese Movies being common.   
+Finally, movies about `World War II` are the ones associated with the largest number of movies, information which can also be extracted by the "smoothness" of the histogram distribution. Both sides share a large variety of genres for the movies, with War films and Period Piece being the most significant ones in terms of comparison with the whole dataset, but no significant difference between the two sides can be extracted from he plot.   
+
+In general these plots underline how the general sentiment associated to the movies produced during the war and movies which directly reference the war are usually quite serious and tense, so we decided to go more in depth with the analysis of the sentiment of the storytelling, suing techniques derived from Natural Language Processing (NLP).
 
 # Examining Storytelling Variations in War Films
 While our previous analysis revealed distinct patterns in genre production across different countries, a deeper examination of narrative construction within the same genre warrants investigation. Our analysis will focus exclusively on war cinema as it provides a unique window into how different nations process, interpret, and memorialize shared historical events through film. War movies are particularly revealing because they often reflect not only a country's historical perspective but also its contemporary values, national identity, and relationship with military conflict. 
@@ -591,11 +565,11 @@ We isolated war films specifically depicting our four conflicts of interest and 
 
 We performed a sentiment analysis on the summaries of the movies identified. This analysis helped identify the emotional tone of the summaries, determining whether they are primarily positive, negative, or neutral depending of the countries of production and the event. 
 
-<iframe src="wwii_sentiment_analysis.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+<iframe src="wwii_sentiment_mini.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
 
 We do observe a higher negative score which isn't surprizing, however the overlapping confidence intervals across all categories indicate that the differences between the Allied and Axis films' sentiment scores are pretty similar. However, it is surpriing to observe that the confidence intervall is much higher for the compound result. Let's observe the distribution. 
 
-<iframe src="wwii_distribution_compound.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+<iframe src="wwii_distribution_mini.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
 
 The distribution is pretty similar among the two samples, however the sample sizes are imbalanced, which could contribute to the variability observed, particularly for Side 2. We also conducted a T-test that confirmed that they were no significant difference between the two sides. 
 
@@ -604,7 +578,7 @@ The distribution is pretty similar among the two samples, however the sample siz
 
 When comparing the results with those from Cold War-themed movies, we found that the sentiment analysis scores were remarkably consistent across both historical contexts. This suggests that the emotional tone in the plot summaries of war genre movies remains largely stable, regardless of the specific conflict being depicted. As with WWII movies, no significant differences were observed between the two sides for neutral, positive, or negative sentiment scores. While a difference in the compound score was noted, it is likely attributable to sample size limitations rather than a meaningful divergence in sentiment. 
 
-<iframe src="global_sentiment_analysis.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+<iframe src="global_sentiment_mini.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
 
 
 It is not sufficient to draw definitive conclusions from these findings, as we cannot yet confidently determine whether there are no differences between countries in their depiction of conflicts within the movie industry. Our sample size was relatively small, and relying solely on plot summaries may not have been the most effective approach for capturing nuanced differences. In the next section, we will adopt a more qualitative approach, focusing not on the overall sentiment of the global plot but on the sentiment associated with specific entities. This shift in methodology aims to provide deeper insights and address potential limitations in our initial analysis.
@@ -640,7 +614,21 @@ function showFrame(frameId) {
   frame.style.display = 'block';
 }
 </script>
-
+<style>
+  .button {
+    background-color: #8B0000;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 11px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 11px;
+  }
+</style>
 
 <!-- Create the buttons -->
 <button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('wwii_Before1')">Allied Side, Before</button>
@@ -679,6 +667,8 @@ The Cold War was as much a battle of ideologies as it was a geopolitical and mil
 <iframe class="toggle-frame" src="heatmap_4.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_After1" style="display: block;">positive barplot</iframe>
 
 ##### Sovietic Block Heatmaps 
+
+
 <!-- Create the buttons -->
 <button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('cw_Before2')">Sovietic Block, Before</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('cw_After2')">Sovietic Block, After</button>
@@ -767,6 +757,20 @@ Nonetheless, it is especially interesting to observe that the interest in the wa
 
 <image src="images/Q4/short_term_trends.png" width="100%" height="1400">
 
-
 At least for war movies, it is not. The interest in war movies is not impacted by the occurrence of wars even in the short term, except for a couple of instances such as war in Ukraine or a conflict in Gaza back in 2007. This indicates that the audiences are rarely interested in watching movies about the events taht are currently experienced.
+
+# Conclusion
+Through this study, we explored how global events, particularly conflicts like World War II, the Cold War, and others, have influenced film genres, public preferences, and sentiment. The analysis of ouur data uncovered how historical events shape cinematic narratives, both in terms of content and reception.
+**Conclusion part 1**
+**Conclusion part 2**
+All wars have been met with a similar increase in genres associated with a serious and tense tone, but there are also charactecteristics differentiating the single countries, both in terms of amounts and genres. On top of that, due to the fact that every single conflict has a sphere of influence different from the others, it is difficult to find constant results across different conflicts.
+
+**Conclusion part 3**
+Sentiment analysis revealed a predominantly negative tone in war-related narratives, reflecting the inherent gravitas of such topics. Entity-level analysis highlighted an universal negativity towards military organizations, shifts in the portrayal of political parties, such as the Nazi Party, and neutral to positive portrayals of international organizations like NATO.
+
+**Conclusion part 4**
+
+
+Cinematography has always served as a cultural mirror, reflecting societal values, fears, and aspirations. By analyzing how global conflicts shape film genres and sentiments, this study underscores the power of storytelling to influence and preserve historical memory.
+
 
