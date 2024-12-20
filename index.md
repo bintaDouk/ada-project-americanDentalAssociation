@@ -618,6 +618,23 @@ The Cold War was as much a battle of ideologies as it was a geopolitical and mil
 <iframe class="toggle-frame" src="heatmap_4.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_After1" style="display: block;">positive barplot</iframe>
 
 ##### Sovietic Block Heatmaps 
+
+<style>
+  .button {
+    background-color: #003e1f;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 11px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 11px;
+  }
+</style>
+
 <!-- Create the buttons -->
 <button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('cw_Before2')">Sovietic Block, Before</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('cw_After2')">Sovietic Block, After</button>
