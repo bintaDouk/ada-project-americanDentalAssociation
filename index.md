@@ -345,177 +345,62 @@ function showFrame(frameId) {
 ## Specific Genres for the Chosen Wars
 
 <script>
-  let currentVisiblePlot = null; // To track the currently visible plot
+  let currentVisibleSet = null; // To track the currently visible set of graphs
 
-  function showFrame(id) {
-    // Hide the currently visible plot, if any
-    if (currentVisiblePlot) {
-      currentVisiblePlot.style.display = 'none';
+  function showGraphs(id) {
+    // Hide the currently visible set, if any
+    if (currentVisibleSet) {
+      currentVisibleSet.style.display = 'none';
     }
 
-    // Find the selected plot by ID and show it
-    const selectedPlot = document.getElementById(id);
-    if (selectedPlot) {
-      selectedPlot.style.display = 'block';
-      currentVisiblePlot = selectedPlot; // Update the currently visible plot
+    // Show the selected set of graphs
+    const selectedSet = document.getElementById(id);
+    if (selectedSet) {
+      selectedSet.style.display = 'block';
+      currentVisibleSet = selectedSet; // Update the currently visible set
     }
   }
 
-  // Initially hide all carousels
+  // Initially hide all sets
   document.addEventListener('DOMContentLoaded', () => {
-    const carousels = document.querySelectorAll('.carousel');
-    carousels.forEach(carousel => {
-      carousel.style.display = 'none';
+    const graphSets = document.querySelectorAll('.graph-set');
+    graphSets.forEach(set => {
+      set.style.display = 'none';
     });
   });
 </script>
 
-<button class="button" style="margin: 0.5px 0; width: 20%; margin-left: 10px; margin-right: 5px" onclick="showFrame('WW2')">WW2</button>
-<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('Cold')">Cold War</button>
-<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('Vietnam')">Vietnam War</button>
-<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('Iran')">Iran-Iraq War</button>
+<button class="button" style="margin: 0.5px 0; width: 20%; margin-left: 10px; margin-right: 5px" onclick="showGraphs('WW2')">WW2</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showGraphs('Cold')">Cold War</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showGraphs('Vietnam')">Vietnam War</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showGraphs('Iran')">Iran-Iraq War</button>
 
-<div id="WW2" class="carousel slide" data-bs-ride="carousel" style="display: none;">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#WW2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#WW2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#WW2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#WW2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
-
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/WW2_barplot_militaryandantiwar.html' width="1000px" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/WW2_barplot_political.html' width="1000px" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/WW2_barplot_positive.html' width="1000px" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#WW2" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#WW2" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div id="WW2" class="graph-set" style="display: none;">
+  <iframe src="images/Q1/WW2_barplot_militaryandantiwar.html" width="800" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/WW2_barplot_political.html" width="800" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/WW2_barplot_positive.html" width="800" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/WW2_barplot_dystopian.html" width="800" height="600" frameborder="0"></iframe>
 </div>
 
-<div id="Cold" class="carousel slide" data-bs-ride="carousel" style="display: none;">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#Cold" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#Cold" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#Cold" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#Cold" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
-
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/Cold_War_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Cold_War_barplot_political.html' width="1000px" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Cold_War_barplot_dystopian.html' width="1000px" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Cold_War_barplot_positive.html' width="1000px" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#Cold" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#Cold" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div id="Cold" class="graph-set" style="display: none;">
+  <iframe src="images/Q1/Cold_War_barplot_militaryandantiwar.html" width="800" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Cold_War_barplot_political.html" width="800" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Cold_War_barplot_positive.html" width="800" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Cold_War_barplot_dystopian.html" width="800" height="600" frameborder="0"></iframe>
 </div>
 
-
-<div id="Vietnam" class="carousel slide" data-bs-ride="carousel" style="display: none;">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
-
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/Vietnam_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Vietnam_barplot_political.html' width="1000px" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Vietnam_barplot_dystopian.html' width="1000px" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Vietnam_barplot_positive.html' width="1000px" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#Vietnam" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#Vietnam" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div id="Vietnam" class="graph-set" style="display: none;">
+  <iframe src="images/Q1/Vietnam_barplot_militaryandantiwar.html" width="800" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Vietnam_barplot_political.html" width="800" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Vietnam_barplot_positive.html" width="800" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Vietnam_barplot_dystopian.html" width="800" height="600" frameborder="0"></iframe>
 </div>
 
-
-<div id="Iran" class="carousel slide" data-bs-ride="carousel" style="display: none;">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#Iran" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#Iran" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#Iran" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#Iran" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
-
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/Iran-Iraq_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Iran-Iraq_barplot_political.html' width="1000px" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Iran-Iraq_barplot_dystopian.html' width="1000px" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/Iran-Iraq_barplot_positive.html' width="1000px" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#Iran" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#Iran" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+<div id="Iran" class="graph-set" style="display: none;">
+  <iframe src="images/Q1/Iran-Iraq_barplot_militaryandantiwar.html" width="800" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Iran-Iraq_barplot_political.html" width="800" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Iran-Iraq_barplot_positive.html" width="800" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Iran-Iraq_barplot_dystopian.html" width="800" height="600" frameborder="0"></iframe>
 </div>
 
 
