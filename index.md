@@ -540,11 +540,11 @@ We isolated war films specifically depicting our four conflicts of interest and 
 
 We performed a sentiment analysis on the summaries of the movies identified. This analysis helped identify the emotional tone of the summaries, determining whether they are primarily positive, negative, or neutral depending of the countries of production and the event. 
 
-<iframe src="wwii_sentiment_analysis.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+<iframe src="wwii_sentiment_mini.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
 
 We do observe a higher negative score which isn't surprizing, however the overlapping confidence intervals across all categories indicate that the differences between the Allied and Axis films' sentiment scores are pretty similar. However, it is surpriing to observe that the confidence intervall is much higher for the compound result. Let's observe the distribution. 
 
-<iframe src="wwii_distribution_compound.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+<iframe src="wwii_distribution_mini.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
 
 The distribution is pretty similar among the two samples, however the sample sizes are imbalanced, which could contribute to the variability observed, particularly for Side 2. We also conducted a T-test that confirmed that they were no significant difference between the two sides. 
 
@@ -553,7 +553,7 @@ The distribution is pretty similar among the two samples, however the sample siz
 
 When comparing the results with those from Cold War-themed movies, we found that the sentiment analysis scores were remarkably consistent across both historical contexts. This suggests that the emotional tone in the plot summaries of war genre movies remains largely stable, regardless of the specific conflict being depicted. As with WWII movies, no significant differences were observed between the two sides for neutral, positive, or negative sentiment scores. While a difference in the compound score was noted, it is likely attributable to sample size limitations rather than a meaningful divergence in sentiment. 
 
-<iframe src="global_sentiment_analysis.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+<iframe src="global_sentiment_mini.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
 
 
 It is not sufficient to draw definitive conclusions from these findings, as we cannot yet confidently determine whether there are no differences between countries in their depiction of conflicts within the movie industry. Our sample size was relatively small, and relying solely on plot summaries may not have been the most effective approach for capturing nuanced differences. In the next section, we will adopt a more qualitative approach, focusing not on the overall sentiment of the global plot but on the sentiment associated with specific entities. This shift in methodology aims to provide deeper insights and address potential limitations in our initial analysis.
@@ -628,6 +628,23 @@ The Cold War was as much a battle of ideologies as it was a geopolitical and mil
 <iframe class="toggle-frame" src="heatmap_4.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_After1" style="display: block;">positive barplot</iframe>
 
 ##### Sovietic Block Heatmaps 
+
+<style>
+  .button {
+    background-color: #003e1f;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 11px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 11px;
+  }
+</style>
+
 <!-- Create the buttons -->
 <button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('cw_Before2')">Sovietic Block, Before</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('cw_After2')">Sovietic Block, After</button>
