@@ -648,7 +648,21 @@ function showFrame(frameId) {
   frame.style.display = 'block';
 }
 </script>
-
+<style>
+  .button {
+    background-color: #8B0000;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 11px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 11px;
+  }
+</style>
 
 <!-- Create the buttons -->
 <button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('wwii_Before1')">Allied Side, Before</button>
@@ -688,21 +702,6 @@ The Cold War was as much a battle of ideologies as it was a geopolitical and mil
 
 ##### Sovietic Block Heatmaps 
 
-<style>
-  .button {
-    background-color: #003e1f;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 14px 20px;
-    text-align: center;
-    font-size: 11px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 11px;
-  }
-</style>
 
 <!-- Create the buttons -->
 <button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('cw_Before2')">Sovietic Block, Before</button>
