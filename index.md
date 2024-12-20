@@ -709,4 +709,19 @@ After the Cold War, sentiments toward Soviet bloc-related entities become less n
 
 In contrast, the Soviet bloc exhibits a universally positive representation of its allied entities, such as the Bolshevik Party, which achieves a notably high positive sentiment (~0.8). This consistent positivity highlights the influence of controlled narratives within the Soviet bloc, where media operated under stricter guidelines and presented a narrower, more favorable lens on allied organizations.
 
+-----------------------
+So far, we've seen that conflicts do impact the tendencies of genre and narratives in movies. However, we can still wonder how these depictions were received by the public. Let's see!
 
+-----------------------
+
+
+# Conclusion
+Through this study, we explored how global events, particularly conflicts like World War II, the Cold War, and others, have influenced film genres, public preferences, and sentiment. The analysis of ouur data uncovered how historical events shape cinematic narratives, both in terms of content and reception.
+**Conclusion part 1**
+**Conclusion part 2**
+Sentiment analysis revealed a predominantly negative tone in war-related narratives, reflecting the inherent gravitas of such topics. Entity-level analysis highlighted an universal negativity towards military organizations, shifts in the portrayal of political parties, such as the Nazi Party, and neutral to positive portrayals of international organizations like NATO.
+
+**Conclusion part 4**
+
+
+Cinematography has always served as a cultural mirror, reflecting societal values, fears, and aspirations. By analyzing how global conflicts shape film genres and sentiments, this study underscores the power of storytelling to influence and preserve historical memory.
