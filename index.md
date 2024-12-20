@@ -490,7 +490,7 @@ Significant changes in genre distributions during key wars provided further insi
 The identified trends in genre production are global and do not offer nuance on the specific countries involved in the war and their sides. Consequently, further, we will analyze film production in relation to specific countries.
 
 ## Geopolitical Analysis of Conflicts
-This section of our research is devolved to the research question: `How do movie genre preferences differ between countries in conflict or those experiencing similar global events?`, in which we investigate variations in genre trends across nations, focusing on contrasts during political tensions and on how different nations respond to similar historical events.      
+This section of our research is devolved to the research question: `How do movie genre preferences differ between countries in conflict?`, in which we investigate variations in genre trends across nations, focusing on contrasts during political tensions and on how different nations respond to similar historical events.      
 
 In order to provide a quick overview of the wars we are analyzing, we provide some initial plots, showing the world map for the opposing countries for each one of the 4 conflicts:   
 * World War II
