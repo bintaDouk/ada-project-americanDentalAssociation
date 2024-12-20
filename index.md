@@ -41,7 +41,7 @@ use-site-title: true
 </style>
 ## Background and motivation
 Ever since the begining of cinematography, movies have often been a reflection of reality. Whether it is through romance stories or tragedies, fiction has been used as a way to mirror real life situations.
-This tendency also applies to crises, as they are major events that impact the socio-economic status of the world, as well as peoples' daily lives. It is only natural to ask ourselves how these very particular events are mirrored in movies, and how well these depictions are received by the public.
+This tendency also applies to crises, as they are major events that impact the socio-economic status of the world, as well as peoples' daily lives. It is only natural to ask ourselves how these very particular events are mirrored in movies, and how well these depictions are received by the public. In our study we focus on interstate wars and discover their influence of genre production and public preference.
 
 Using the CMU Movie Dataset, we will answer the following research questions:
 1. How do global crises and significant world events shape film production, themes, and public preferences?
@@ -63,7 +63,9 @@ The analysis in the first section examines how various wars influenced the produ
 To lead a preliminary inspection of war-related genres and chose specific wars for further analysis, three groups of of a few specfic genres were formed: war-related genres, political genres, dystopian genres.
 
 **Military** (War-related) genres: War Film, Antiwar, Superhero, Spy
+
 **Political** genres: Political Thriller, Political Satire, Political Cinema, Political Drama
+
 **Dystopian** genres: Dystopia, Apocalyptic and Postapocalyptic Fiction
 
 The war-related genres are the ones that we identified eariler as genres either related to war or military propaganda. Political genres were chosen to reflect the geopolitical side of wars. Dystopian and Apocalyptic genres were chosen as these genres often talk about war-related aplocalypses as well as dystopian societies based on military rule.
@@ -122,18 +124,23 @@ Note, however, that the Second Laotian War's timeline is contained withing the t
 
 ## Finding Correlations
 In this section, for the chosen wars' time window (the timeline with a 2 year window before and after), we inspected the correlation of the genres released with the number of ongoing wars per year and yearly battle deaths. The inspection was conducted for the genres groups mentioned before. And moreover, for these genres:
-**War film, Spy, Superhero, Romance Film, Romantic drama, Family Film, Romantic comedy, Comedy, Fantasy, Thriller, Horror, Drama, Social issues, Antiwar, Disaster**. Moreover, another genre group was created:
+**War film, Spy, Superhero, Romance Film, Romantic drama, Family Film, Romantic comedy, Comedy, Fantasy, Thriller, Horror, Drama, Social issues, Antiwar, Disaster**. 
+
+Moreover, another genre group was created:
 **Positive** genres: Family Film, Romance Film, Romantic Comedy, Fantasy, Romantic Drama.
 
 The range of genres was increased in order to include the more widespread genres, such as Drama, and inspect negative genres, such as Horror and Thriller, and postive genres. One of the objectives of the analysis was to identify not just correlation with war-related genres or horror-related genres but with positive genres that are associated with entertainemnt and/or escapism.
 
 The plots below showcase the scatter plots for genre proportions vs. number of ongoing wars or vs. battle deaths. The plots also contain the Pearson correlation value, the p-value and the OLS line. For the analysus the condifence interval of 95% (alpha = 0.05) was chosen. The plots presented were sorted based on the p-value below 0.05 and correlation value above 0.45.
 
-**Correlations for the Second World War (1937-1947)**
+**Correlations for the Second World War (1939-1945)**
 
 *Battle Deaths*
+
 Family Film: correlation value = -0.72, p-value = 0.0167, R-squared = 0.524.
+
 Horror: correlation value = 0.84, p-value = 0.00137, R-squared = 0.6976.
+
 Drama: correlation value = -0.6089, p-value = 0.0468, R-squared = 0.37.
 
  We can infer that as the battle deaths grow, the number of family films produced decreases while horror movies' production grows. Drama decreases with the growth but this model's fit is weak. Note, however, that the increased battle deaths for World War II might skew the results.
@@ -172,12 +179,14 @@ Drama: correlation value = -0.6089, p-value = 0.0468, R-squared = 0.37.
   </button>
 </div>
 
-**Correlations for the Vietnam War (1963-1977)**
+**Correlations for the Vietnam War (1965-1975)**
 
 *Number of Wars*
+
 Family Film: correlation value = -0.6108, p-value = 0.015, R-squared = 0.373
 
 *Battle Deaths*
+
 Fantasy: correlation value = -0.5166, p-value = 0.0486, R-squared = 0.2669
 
 Due to low values of R-squared, it is hard to make conclusions but we may say that the number of Family Films produced decreases as the number of wars increases. While Fantasy Films produciton decreases with the increase of Battle Deaths.
@@ -205,16 +214,17 @@ function showFrame(frameId) {
 <iframe class="toggle-frame" src="images/Q1/corr_batdeath_Fantasy_1963-1977.html" width="800px" height="600px" frameborder="0" position="relative" id="corrvietbat" style="display: block;"></iframe>
 <iframe class="toggle-frame" src="images/Q1/corr_numwars_Family_Film_1963-1977.html" width="800px" height="600px" frameborder="0" position="relative" id="corrvietnum" style="display: block;"></iframe>
 
-**Correlations for the Cold War (1947-1991)**
+**Correlations for the Cold War (1949-1989)**
 
 *Number of Wars*
+
 Romantic Comedy: correlation value = -0.4506, p-value = 0.00189, R-squared = 0.203
 
 The R-squared is quite low, so it is hard to make a concrete conclusion but the suggestion is that the Romantic Comedy production decreases as the number of wars grows.
 
 <iframe src='images/Q1/corr_numwars_Romantic_comedy_1947-1991.html' width="100%" height="600" frameborder="0"></iframe>
 
-**Correlations for the Iran-Iraq War (1978-1990)**
+**Correlations for the Iran-Iraq War (1980-1988)**
 
 None of the correlations yield a small enough p-value.
 
@@ -223,7 +233,9 @@ None of the correlations yield a small enough p-value.
 Correlations were first calculated for the full timeline of 1931-2012 and yilded very low p-values for War Film, Military Movies, Military & Antiwar Movies. However, most battle deaths recorded are below 300,000, while the Battle Deaths for the WW2 are recorded as more than 2 million yearly (approximation done by dividing the duration of a war by the total battle death). So these values will not be reported as significant, even though it can be said that the proportion of War movies had the largest spike at the time. Consequently, a cutoff of 1950 was created since the spike in battle deaths during the WW2 significantely affected the results.
 
 *Number of Wars*
+
 Superhero: correlation value = -0.4841 5.8151e-05, R-squared = 0.234
+
 Romantic comedy: correlation value = -0.5606, p-value = 1.7646e-06, R-squared = 0.314
 
 The R-squared are low again but for Romantic comedy it may be said that it decreases in production as the number of wars increases.
@@ -261,7 +273,9 @@ The R-squared are low again but for Romantic comedy it may be said that it decre
 **Correlations for the the End of 20th - Beginning of 21st Century**
 
 *Number of Wars*
+
 Social Issues: correlation value = -0.5008, p-value = 0.0149, R-squared = 0.2508
+
 Political Movies: correlation value = -0.548, 0.0067, R-squared = 0.3
 
 The R-squared are low again but for Romantic comedy it may be said that it decreases in production as the number of wars increases.
@@ -313,18 +327,22 @@ For some inspection, the network for War Film was created, which is the movie ge
 Significant changes in genre distribution were defined for the chosen wars by using chi-square testing. The window before and after the war defined as 5 years.
 
 **World War II**
+
 Some of the changes can be associated with cinematography trends: Back and White, Film Noir, PreCode (Pre-Code Hollywood was an era in the American film industry that occurred between the widespread adoption of sound in film in the late 1920s), and World Cinema. However, it is important to note that the origins of Film Noir as a genre included dark themes and after the war the genre grew and started depicting moral ambiguity, physchological effects of war and other introspection and reflection on the war.
 
 Some interesting observations here also incldue that the War Film genre increases greatly during the war but in the aftermath drops to its previous level. A similar thing happened to the Horror genre - moreover, its production after the war drops to lower than before the event. Thriller and Psychological Thriller, on the other hand exprience growth during and then after the war as well. The production of Drama drops during the war and increases back afterwards. Propaganda movies were on an extreme rise during the war, which aligns with the nature of the World War II and propagandistic goals of Nazi Germany.
 
 **Cold War**
+
 As discussed earlier, the Cold War spans a very large timeline, moreover the "before" time for it includes the World War II, so it is hard to make any concrete analysis from the resulting graph. Most of the changes are explained the trends in cinematography. We can say, however, that the War Films experienced a drop after the Cold War ended.
 
 **Vietnam War**
+
 Here we once again see an increase in Thriller movies production and here it is joined by Action movies. Interestingly, the War Film genre has not experienced significant changes, even though its peaks were identified to happen at the time as well. Romantic comedy genre has significantly decreased and noteably, for some timelines we have seen before a correlation - that Romantic comedy production decreases as the number of wars grows. It is interesting to see a great increase in Matrial Arts Film, which could be affected by the events of the war, as Martial Arts are usually associated with Asian culture.
 Genres like British New Wave and Kitchen Sink Realism (film, whose protagonists usually could be described as "angry young men" who were disillusioned with modern society) dropped in production. These genres talked about social issues but were weakly related to specific wars.
 
 **Iran-Iraq War**
+
 For the timeline of the Iran-Iraq, it seems like most of the significant genre production changes were influenced by trends in cinematography and new genres originating at the time. This could also be explained by the fact that this war included much less countries than the previous war and lacked the involvement of Western countries and the United States specifically who dominate the movie market.
 
 <script>
@@ -357,6 +375,7 @@ function showFrame(frameId) {
 
 ## Specific Genres for the Chosen Wars
 **World War II**
+
 Military Genres:
 For military mvoies we can see an almost normal distribution in the plot for World War II. The War Film genre especially looks like it follows normal distribution with its peak in 1943. The spy movies also were at the highest in the middle of the war (1942 and 1943). 
 
@@ -364,6 +383,7 @@ Positive Genres:
 The positive genres seem to be quite stable over the timeline with a vary similar total proportion for each year. 
 
 **Cold War**
+
 Military Genres:
 Multiple the events of signigicant importance within the Cold War happened in the 1950s and 1960s, which could explain some increase in the War Film genre. However, as we know, the Vietnam War also starts in the 1960s, so the results can be affected by both of these. Another rise closer to the 1980s, for example, could be associated with the war in Afghanistan, which is associated with the Cold War as well. However, these observartions are highly theoretical and could be a base for a more specific Cold War analysis in another study.
 
@@ -371,6 +391,7 @@ Positive Genres:
 Once again we see that the positive genre production is stable over time even for such a extensive timeline, except for a drop from around 1966, which will be mentioned later.
 
 **Vietnam War**
+
 Military Genres:
 From 1963 to 1971 it seems like the Spy genre is close to normal distribution, which could be related to the nature of the Vietnam War. It is important to note that the U.S. was involved in the Civil War and events in Vietnam before it officially joined it. The War Film genre was quite stable in the beginning and dropped in the middle.
 
@@ -378,6 +399,7 @@ Positive Genres:
 Interestingly, as mentoined earlier here the Positive Genres are not stable and they slowly decrease in produciton up until 1974, mostly due to the Comedy genre. Thus, it could be hypothesized that this war specifically had an unusual effect on the Comedy genre.
 
 **Iran-Iraq War**
+
 Military genres:
 The production of War Film had a noticeably peak in 1979 (note: Soviet invasion in Afghanistan) but stayed approximately the same for the other years. So we can assume the Iran-Iraq War did not affect the genre greatly.
 
@@ -391,12 +413,6 @@ Most of the time the positive genres have the same proportion across the timelin
 The political genres do not lead to any conclusions and contain a lot of oscillations. The conclusion is that the political genres are not affected by interstate wars but could be affected by other global events.
 The dystopian genres also do not lead to any specific conclusion and do not seem to be influenced by wars. We can also note that these genres are quite modern and lack in produciton in the 20th century.
 The military genres often seemed to follow a normal distribution during the big 20th century wars. This implies that military-related genres rise as the war starts, peak in the middle of the war and decrease again. However, for Iran-Iraq War the pattern was not identified, which could be due to the involvement of Western Countries and the scale of the event.
-
-This study’s first research question examined how wars influenced the production of various movie genres, revealing distinct trends. Military genres, such as War Films and Spy Films, often followed a cyclic pattern, peaking during major conflicts like World War II and the Vietnam War before declining afterward. Positive genres, including Comedy and Family Films, generally remained stable, serving as escapism, though prolonged conflicts like the Vietnam War disrupted their production. Political and dystopian genres showed less consistent trends, suggesting they are more influenced by broader cultural or geopolitical factors.
-
-Significant changes in genre distributions during key wars provided further insights. World War II saw spikes in War Films and propaganda, while Horror Films rose during the war but declined afterward. The Vietnam War spurred increases in Thrillers and Action Films, alongside a notable drop in Romantic Comedies. The Cold War’s extended timeline diluted clear trends, though War Films declined post-conflict. These findings highlight the complex interplay between wars and cinematic trends, particularly for military and positive genres, offering a foundation for further exploration in subsequent research questions.
-
-The identified trends in genre production are global and do not offer nuance on the specific countries involved in the war and their sides. Consequently, further, we will analyze film production in relation to specific countries.
 
 <script>
   let currentVisibleSet = null; // To track the currently visible set of graphs
@@ -456,6 +472,11 @@ The identified trends in genre production are global and do not offer nuance on 
   <iframe src="images/Q1/Iran-Iraq_barplot_dystopian.html" width="1000" height="600" frameborder="0"></iframe>
 </div>
 
+This study’s first research question examined how wars influenced the production of various movie genres, revealing distinct trends. Military genres, such as War Films and Spy Films, often followed a cyclic pattern, peaking during major conflicts like World War II and the Vietnam War before declining afterward. Positive genres, including Comedy and Family Films, generally remained stable, serving as escapism, though prolonged conflicts like the Vietnam War disrupted their production. Political and dystopian genres showed less consistent trends, suggesting they are more influenced by broader cultural or geopolitical factors.
+
+Significant changes in genre distributions during key wars provided further insights. World War II saw spikes in War Films and propaganda, while Horror Films rose during the war but declined afterward. The Vietnam War spurred increases in Thrillers and Action Films, alongside a notable drop in Romantic Comedies. The Cold War’s extended timeline diluted clear trends, though War Films declined post-conflict. These findings highlight the complex interplay between wars and cinematic trends, particularly for military and positive genres, offering a foundation for further exploration in subsequent research questions.
+
+The identified trends in genre production are global and do not offer nuance on the specific countries involved in the war and their sides. Consequently, further, we will analyze film production in relation to specific countries.
 
 ## Geopolitical Analysis of Conflicts
 This section of our research is devolved to the research question: `How do movie genre preferences differ between countries in conflict or those experiencing similar global events?`, in which we investigate variations in genre trends across nations, focusing on contrasts during political tensions and on how different nations respond to similar historical events.      
