@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cinematography in Times of Crisis
-subtitle:  Exploring the Impact of Global Events on Film Genres and Public Preferences
+subtitle:  Exploring the Impact of Wars and Global Events on Film Production and Public Preferences
 cover-img: /assets/img/téléchargement.jpg
 thumbnail-img: /assets/img/téléchargement.jpg
 share-img: /assets/img/téléchargement.jpg
@@ -41,11 +41,11 @@ use-site-title: true
 </style>
 ## Background and motivation
 Ever since the begining of cinematography, movies have often been a reflection of reality. Whether it is through romance stories or tragedies, fiction has been used as a way to mirror real life situations.
-This tendency also applies to crises, as they are major events that impact the socio-economic status of the world, as well as peoples' daily lives. It is only natural to ask ourselves how these very particular events are mirrored in movies, and how well these depictions are received by the public. In our study we focus on interstate wars and discover their influence of genre production and public preference.
+This tendency also applies to wars and other crises, as they are major events that impact the socio-economic status of the world, as well as peoples' daily lives. It is only natural to ask ourselves how these very particular events are mirrored in movies, and how well these depictions are received by the public. In our study we focus on interstate wars and discover their influence of genre production and then extend our analysis to other crises and the public's preference.
 
 Using the CMU Movie Dataset, we will answer the following research questions:
-1. How do global crises and significant world events shape film production, themes, and public preferences?
-2. How do movie genre preferences differ between countries in conflict or those experiencing similar global events?
+1. How do wars shape film production, themes, and public preferences?
+2. How do movie genre preferences differ between countries at war?
 3. How does the portrayal of historical events in movies vary based on the country of production?
 4. How do global events like natural disasters, pandemics, and wars influence public preferences for specific themes and genres?
 
@@ -54,7 +54,7 @@ Our analysis starts from three main datasets:
 * The [IMDb Dataset](https://www.kaggle.com/datasets/ashirwadsangwan/imdb-dataset), containing movie ratings and other information
 * The [Correlates of War Dataset](https://correlatesofwar.org/data-sets/cow-war/), containing a list of major historical conflicts
 After some quick initial filtering, we merged the CMU and IMDb datasets to generate a bigger `Movies` dataset better suited for our needs, and we filtered the `Wars` datasets to only contain the conflicts relevant to the time period corresponding to the movies we are considering.   
-On top of that, we decided to focus our analysis on a reduced set of wars, being `World War II`, `Korean War`, `Cold War` and `Vietnam War`, which from a quick initial analysis seemed to have the largest related information in the movies dataset.
+On top of that, throughout the project decided to focus our analysis on reduced sets of wars are identified in the project.
 
 ## Inspecting genre groups
 
@@ -127,6 +127,7 @@ In this section, for the chosen wars' time window (the timeline with a 2 year wi
 **War film, Spy, Superhero, Romance Film, Romantic drama, Family Film, Romantic comedy, Comedy, Fantasy, Thriller, Horror, Drama, Social issues, Antiwar, Disaster**. 
 
 Moreover, another genre group was created:
+
 **Positive** genres: Family Film, Romance Film, Romantic Comedy, Fantasy, Romantic Drama.
 
 The range of genres was increased in order to include the more widespread genres, such as Drama, and inspect negative genres, such as Horror and Thriller, and postive genres. One of the objectives of the analysis was to identify not just correlation with war-related genres or horror-related genres but with positive genres that are associated with entertainemnt and/or escapism.
@@ -135,7 +136,7 @@ The plots below showcase the scatter plots for genre proportions vs. number of o
 
 **Correlations for the Second World War (1939-1945)**
 
-*Battle Deaths*
+*Battle Deaths:*
 
 Family Film: correlation value = -0.72, p-value = 0.0167, R-squared = 0.524.
 
@@ -181,11 +182,11 @@ Drama: correlation value = -0.6089, p-value = 0.0468, R-squared = 0.37.
 
 **Correlations for the Vietnam War (1965-1975)**
 
-*Number of Wars*
+*Number of Wars:*
 
 Family Film: correlation value = -0.6108, p-value = 0.015, R-squared = 0.373
 
-*Battle Deaths*
+*Battle Deaths:*
 
 Fantasy: correlation value = -0.5166, p-value = 0.0486, R-squared = 0.2669
 
@@ -216,7 +217,7 @@ function showFrame(frameId) {
 
 **Correlations for the Cold War (1949-1989)**
 
-*Number of Wars*
+*Number of Wars:*
 
 Romantic Comedy: correlation value = -0.4506, p-value = 0.00189, R-squared = 0.203
 
@@ -232,9 +233,9 @@ None of the correlations yield a small enough p-value.
 
 Correlations were first calculated for the full timeline of 1931-2012 and yilded very low p-values for War Film, Military Movies, Military & Antiwar Movies. However, most battle deaths recorded are below 300,000, while the Battle Deaths for the WW2 are recorded as more than 2 million yearly (approximation done by dividing the duration of a war by the total battle death). So these values will not be reported as significant, even though it can be said that the proportion of War movies had the largest spike at the time. Consequently, a cutoff of 1950 was created since the spike in battle deaths during the WW2 significantely affected the results.
 
-*Number of Wars*
+*Number of Wars:*
 
-Superhero: correlation value = -0.4841 5.8151e-05, R-squared = 0.234
+Superhero: correlation value = -0.4841 p-value = 5.8151e-05, R-squared = 0.234
 
 Romantic comedy: correlation value = -0.5606, p-value = 1.7646e-06, R-squared = 0.314
 
@@ -272,7 +273,7 @@ The R-squared are low again but for Romantic comedy it may be said that it decre
 
 **Correlations for the the End of 20th - Beginning of 21st Century**
 
-*Number of Wars*
+*Number of Wars:*
 
 Social Issues: correlation value = -0.5008, p-value = 0.0149, R-squared = 0.2508
 
@@ -346,19 +347,29 @@ Genres like British New Wave and Kitchen Sink Realism (film, whose protagonists 
 For the timeline of the Iran-Iraq, it seems like most of the significant genre production changes were influenced by trends in cinematography and new genres originating at the time. This could also be explained by the fact that this war included much less countries than the previous war and lacked the involvement of Western countries and the United States specifically who dominate the movie market.
 
 <script>
-function showFrame(frameId) {
-  // Get all iframes with the toggle-frame class
-  var frames = document.getElementsByClassName('toggle-frame');
+  let currentVisibleSet = null; // To track the currently visible set of graphs
 
-  // Hide all iframes with the toggle-frame class
-  for (var i = 0; i < frames.length; i++) {
-    frames[i].style.display = 'none';
+  function showGraphs(id) {
+    // Hide the currently visible set, if any
+    if (currentVisibleSet) {
+      currentVisibleSet.style.display = 'none';
+    }
+
+    // Show the selected set of graphs
+    const selectedSet = document.getElementById(id);
+    if (selectedSet) {
+      selectedSet.style.display = 'block';
+      currentVisibleSet = selectedSet; // Update the currently visible set
+    }
   }
 
-  // Show the selected iframe
-  var frame = document.getElementById(frameId);
-  frame.style.display = 'block';
-}
+  // Initially hide all sets
+  document.addEventListener('DOMContentLoaded', () => {
+    const graphSets = document.querySelectorAll('.graph-set');
+    graphSets.forEach(set => {
+      set.style.display = 'none';
+    });
+  });
 </script>
 
 <!-- Create the buttons -->
