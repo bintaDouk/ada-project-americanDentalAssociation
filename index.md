@@ -543,7 +543,7 @@ The distribution is pretty similar among the two samples, however the sample siz
 
 When comparing the results with those from Cold War-themed movies, we found that the sentiment analysis scores were remarkably consistent across both historical contexts. This suggests that the emotional tone in the plot summaries of war genre movies remains largely stable, regardless of the specific conflict being depicted. As with WWII movies, no significant differences were observed between the two sides for neutral, positive, or negative sentiment scores. While a difference in the compound score was noted, it is likely attributable to sample size limitations rather than a meaningful divergence in sentiment. 
 
-<iframe src="global_sentiment_analysis.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+<iframe src="global_sentiment_mini.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
 
 
 It is not sufficient to draw definitive conclusions from these findings, as we cannot yet confidently determine whether there are no differences between countries in their depiction of conflicts within the movie industry. Our sample size was relatively small, and relying solely on plot summaries may not have been the most effective approach for capturing nuanced differences. In the next section, we will adopt a more qualitative approach, focusing not on the overall sentiment of the global plot but on the sentiment associated with specific entities. This shift in methodology aims to provide deeper insights and address potential limitations in our initial analysis.
