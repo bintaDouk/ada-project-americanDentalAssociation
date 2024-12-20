@@ -446,30 +446,30 @@ The identified trends in genre production are global and do not offer nuance on 
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showGraphs('Iran')">Iran-Iraq War</button>
 
 <div id="WW2" class="graph-set" style="display: none;">
-  <iframe src="images/Q1/WW2_barplot_militaryandantiwar.html" width="1000" height="600" frameborder="0"></iframe>
-  <iframe src="images/Q1/WW2_barplot_political.html" width="1000" height="600" frameborder="0"></iframe>
-  <iframe src="images/Q1/WW2_barplot_positive.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/WW2_barplot_militaryandantiwar.html" width="1000" height="800" frameborder="0"></iframe>
+  <iframe src="images/Q1/WW2_barplot_political.html" width="1000" height="800" frameborder="0"></iframe>
+  <iframe src="images/Q1/WW2_barplot_positive.html" width="1000" height="800" frameborder="0"></iframe>
 </div>
 
 <div id="Cold" class="graph-set" style="display: none;">
-  <iframe src="images/Q1/Cold_War_barplot_militaryandantiwar.html" width="1000" height="600" frameborder="0"></iframe>
-  <iframe src="images/Q1/Cold_War_barplot_political.html" width="1000" height="600" frameborder="0"></iframe>
-  <iframe src="images/Q1/Cold_War_barplot_positive.html" width="1000" height="600" frameborder="0"></iframe>
-  <iframe src="images/Q1/Cold_War_barplot_dystopian.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Cold_War_barplot_militaryandantiwar.html" width="1000" height="800" frameborder="0"></iframe>
+  <iframe src="images/Q1/Cold_War_barplot_political.html" width="1000" height="800" frameborder="0"></iframe>
+  <iframe src="images/Q1/Cold_War_barplot_positive.html" width="1000" height="800" frameborder="0"></iframe>
+  <iframe src="images/Q1/Cold_War_barplot_dystopian.html" width="1000" height="800" frameborder="0"></iframe>
 </div>
 
 <div id="Vietnam" class="graph-set" style="display: none;">
-  <iframe src="images/Q1/Vietnam_barplot_militaryandantiwar.html" width="1000" height="600" frameborder="0"></iframe>
-  <iframe src="images/Q1/Vietnam_barplot_political.html" width="1000" height="600" frameborder="0"></iframe>
-  <iframe src="images/Q1/Vietnam_barplot_positive.html" width="1000" height="600" frameborder="0"></iframe>
-  <iframe src="images/Q1/Vietnam_barplot_dystopian.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Vietnam_barplot_militaryandantiwar.html" width="1000" height="800" frameborder="0"></iframe>
+  <iframe src="images/Q1/Vietnam_barplot_political.html" width="1000" height="800" frameborder="0"></iframe>
+  <iframe src="images/Q1/Vietnam_barplot_positive.html" width="1000" height="800" frameborder="0"></iframe>
+  <iframe src="images/Q1/Vietnam_barplot_dystopian.html" width="1000" height="800" frameborder="0"></iframe>
 </div>
 
 <div id="Iran" class="graph-set" style="display: none;">
-  <iframe src="images/Q1/Iran-Iraq_barplot_militaryandantiwar.html" width="1000" height="600" frameborder="0"></iframe>
-  <iframe src="images/Q1/Iran-Iraq_barplot_political.html" width="1000" height="600" frameborder="0"></iframe>
-  <iframe src="images/Q1/Iran-Iraq_barplot_positive.html" width="1000" height="600" frameborder="0"></iframe>
-  <iframe src="images/Q1/Iran-Iraq_barplot_dystopian.html" width="1000" height="600" frameborder="0"></iframe>
+  <iframe src="images/Q1/Iran-Iraq_barplot_militaryandantiwar.html" width="1000" height="800" frameborder="0"></iframe>
+  <iframe src="images/Q1/Iran-Iraq_barplot_political.html" width="1000" height="800" frameborder="0"></iframe>
+  <iframe src="images/Q1/Iran-Iraq_barplot_positive.html" width="1000" height="800" frameborder="0"></iframe>
+  <iframe src="images/Q1/Iran-Iraq_barplot_dystopian.html" width="1000" height="800" frameborder="0"></iframe>
 </div>
 
 
