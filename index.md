@@ -203,8 +203,8 @@ function showFrame(frameId) {
 <button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('corrvietbat')">Battle Deaths</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('corrvietnum')">Number of Wars</button>
 
-<iframe class="toggle-frame" src="images/Q1/corr_batdeath_Fantasy_1963-1977.html" width="800px" height="900px" frameborder="0" position="relative" id="corrvietbat" style="display: block;"></iframe>
-<iframe class="toggle-frame" src="images/Q1/corr_numwars_Family_Film_1963-1977.html" width="800px" height="900px" frameborder="0" position="relative" id="corrvietnum" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/corr_batdeath_Fantasy_1963-1977.html" width="800px" height="600px" frameborder="0" position="relative" id="corrvietbat" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/corr_numwars_Family_Film_1963-1977.html" width="800px" height="600px" frameborder="0" position="relative" id="corrvietnum" style="display: block;"></iframe>
 
 
 Correlations for the Cold War (1947-1991)
@@ -336,10 +336,10 @@ function showFrame(frameId) {
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('vietchange')">Vietnam War</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('iraniraqchange')">Iran-Iraq War</button>
 
-<iframe class="toggle-frame" src="images/Q1/significantchange_WW2.html" width="800px" height="900px" frameborder="0" position="relative" id="ww2change" style="display: block;"></iframe>
-<iframe class="toggle-frame" src="images/Q1/significantchange_ColdWar.html" width="800px" height="900px" frameborder="0" position="relative" id="coldchange" style="display: block;"></iframe>
-<iframe class="toggle-frame" src="images/Q1/significantchange_Vietnam.html" width="800px" height="900px" frameborder="0" position="relative" id="vietchange" style="display: block;"></iframe>
-<iframe class="toggle-frame" src="images/Q1/significantchange_Iran-Iraq.html" width="800px" height="900px" frameborder="0" position="relative" id="iraniraqchange" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/significantchange_WW2.html" width="800px" height="600px" frameborder="0" position="relative" id="ww2change" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/significantchange_ColdWar.html" width="800px" height="600px" frameborder="0" position="relative" id="coldchange" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/significantchange_Vietnam.html" width="800px" height="600px" frameborder="0" position="relative" id="vietchange" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/significantchange_Iran-Iraq.html" width="800px" height="600px" frameborder="0" position="relative" id="iraniraqchange" style="display: block;"></iframe>
 
 
 ## Specific Genres for the Chosen Wars
@@ -373,7 +373,6 @@ function showFrame(frameId) {
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('Vietnam')">Vietnam War</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('Iran')">Iran-Iraq War</button>
 
-World War II
 <div id="WW2" class="carousel slide" data-bs-ride="carousel" style="display: none;">
   <!-- Indicators -->
   <div class="carousel-indicators">
@@ -407,8 +406,6 @@ World War II
   </button>
 </div>
 
-
-The Cold War
 <div id="Cold" class="carousel slide" data-bs-ride="carousel" style="display: none;">
   <!-- Indicators -->
   <div class="carousel-indicators">
@@ -446,8 +443,6 @@ The Cold War
 </div>
 
 
-The Vietnam War
-
 <div id="Vietnam" class="carousel slide" data-bs-ride="carousel" style="display: none;">
   <!-- Indicators -->
   <div class="carousel-indicators">
@@ -484,8 +479,6 @@ The Vietnam War
   </button>
 </div>
 
-
-The Iran-Iraq War
 
 <div id="Iran" class="carousel slide" data-bs-ride="carousel" style="display: none;">
   <!-- Indicators -->
