@@ -694,19 +694,22 @@ sustained changes over time. In order to achieve this, we utilize the insights f
 
 In previous parts we have found the most prominent movies genres. Now we will explore the interest in these genres over time. We firstly took the top 20 genres overall.
 
-<image src="images/Q4/top_genres.png" style="width: 100%; height: auto;">
+<image src="images/Q4/top_genres.png" style="width: 100%; height: auto;"></image>
 
 We then analyzed the search interest intensity over the years for these genres.
 
-<image src="images/Q4/heatmap_interest.png" style="width: 100%; height: auto;">
+<image src="images/Q4/heatmap_interest.png" style="width: 100%; height: auto;"></image>
 
 The first general observation is that the overall movies popularity peaked in 2016-2017 and then again in the beginning of COVID pandemics. The reason for the peak during the pandemics is clear - we were stuck at home during the lockdowns! However, why was there another peak in 2016-2017?
 
-This peak could be explained by two of many other factors: 1. By 2015, streaming had firmly established itself as a dominant force in the entertainment industry. Netflix had expanded to over 190 countries, and Amazon Prime Video had also become a significant player, therefore driving interest in movies. 2. 2016-2018 were among the best years in history with the number of newly released movies as well as box office numbers peaked (Source: [BoxOfficeMojo](https://www.boxofficemojo.com/year/)). Further analysis of such factors would be a particularly interesting idea but is worth another ADA project by itself!
+This peak could be explained by two of many other factors:
+
+1. By 2015, streaming had firmly established itself as a dominant force in the entertainment industry. Netflix had expanded to over 190 countries, and Amazon Prime Video had also become a significant player, therefore driving interest in movies.
+2. 2016-2018 were among the best years in history with the number of newly released movies as well as box office numbers peaked (Source: [BoxOfficeMojo](https://www.boxofficemojo.com/year/)). Further analysis of such factors would be a particularly interesting idea but is worth another ADA project by itself!
 
 If we zoom out from these peak periods, we can also observe strong seasonality patterns in particular movie genres interest. For example, interest for horror movies generally peaks during Halloween season and Family movies peak around Christmas. 
 
-<image src="images/Q4/seasonality_chart.png" style="width: 100%; height: auto;">
+<image src="images/Q4/seasonality_chart.png" style="width: 100%; height: auto;"></image>
 
 We can now perform a seasonal decomposition analysis to further inspect the strength of such patterns for all movie genres. This analysis is performed using an additive seasonality signal:
 
@@ -719,13 +722,13 @@ Y[t] = T[t] + S[t] + e[t]
 
 This helps us to firstly identify if there are movie movie genres exhibiting strong seasonality patterns. While we do not find more positive seasonality patterns as for Horror and Family movies, we can observe more significant negative seasonality where popularity historical movies reduces during the summer months. This seasonal impact is more prolonged, as observed by wider signal peaks.
 
-<image src="images/Q4/seasonality_all.png" style="width: 100%; height: auto;">
+<image src="images/Q4/seasonality_all.png" style="width: 100%; height: auto;"></image>
 
 One potential reason for such negative seasonality could be that historical movies are consumed for educational purposes, therefore during the summer months, when students are on vacation, the interest in historical movies decreases.
 
 Moreover, as explained above, the seasonality decomposition also provides us the ability to infer a cleaner trend signal. Paired with a polynomial regression (of degree two in this case), we can identify the overall trend in popularity for each movie genre.
 
-<image src="images/Q4/trends_all.png" style="width: 100%; height: auto;">
+<image src="images/Q4/trends_all.png" style="width: 100%; height: auto;"></image>
 
 Here, we can clearly see long-term changes in the popularity of different movie genres. The majority of genres exhibit a popularity trend consistent with the movies popularity peaks where the trend was positive until 2017 and reversed shortly after that. It is also observed that crime and thriller movie genres have been consistently gaining popularity over the years. A clear declining trend is also observed for the historical movie genre and music movies. What is a music movie? As per IMDb:
 
@@ -735,23 +738,23 @@ Focusing ourselves on the impact of wars, we can see that the popularity in war 
 
 However are the interest fluctuations related to the number of movies released over the years? To answer this, we have to restrict ourselves in movies data availability period which overlaps with available Google Search Trends Data for years 2004-2012. We can then estimate the correlation between the number of movies released and the interest in a particular genre.
 
-<image src="images/Q4/correlation.png" style="width: 100%; height: auto;">
+<image src="images/Q4/correlation.png" style="width: 100%; height: auto;"></image>
 
 The results suggest that the number of genre-specific movies released in a year is largely negatively correlated with the interest for such a genre. A possible explanation for that could be that if more movies are released in a genre, audiences might experience fatigue or feel overwhelmed, leading to a decline in search interest. Nonetheless, there are three notable outliers over our defined sample period: Music, Musicals and Sci-Fi movies. These differences could be explained by a boom of Sci-Fi movies released over the 2000s. There was also a shorter boom in Musicals, especially notable with the release of *Mamma Mia!* and other Musicals that followed the influx of this movie's genres. This would suggest that over the years the interest in such genres was not dilluted by the amount of new movies being released. Nonetheless, these results are not significant at a 5% confidence level, therefore cannot be considered as a strong evidence of a relationship between the number of movies released and the interest in a genre.
 
 But what about the impact of global events on audience preferences? To answer this question, we will shift focus to changes in genre popularity when these events occur. We can firstly try to check if the occurences of different global events had an impact on the interest of certain movie genres. For that, we have collected the most important global events from the [Wikipedia's 21st Century Timeline](https://en.wikipedia.org/wiki/Timeline_of_the_21st_century) and classified them into 5 types: wars, political instability, natural disasters, catastrophes, pandemics, and economic crises. We then analyzed the changes interest of different movie genres together with the number of instances of these events over the months over the period of 2004 to 2023. For that, a linear regression analysis was performed to estimate the impact of these events on the interest in a genre. Below we have plotted only those results which are significant at a 5% confidence level.
 
-<image src="images/Q4/events_on_movie_interest.png" style="width: 100%; height: auto;">
+<image src="images/Q4/events_on_movie_interest.png" style="width: 100%; height: auto;"></image>
 
 While the results estimate that the impact of global events on the interest in movie genres is significant for some pairs, the R-squared values are generally low, indicating that the global events do not explain the majority of the variance in the interest in movie genres, which is rational considering the rarity of such global events happening.
 
-<image src="images/Q4/events_on_movie_interest_heatmap.png" style="width: 100%; height: auto;">
+<image src="images/Q4/events_on_movie_interest_heatmap.png" style="width: 100%; height: auto;"></image>
 
 The most significant impact is naturally observed by the occurence of pandemics. For our observation period, only COVID pandemic had a significant impact on the interest in almost all movie genres. This is rational as people were stuck at home during the lockdowns and were looking for ways to entertain themselves.
 
 Nonetheless, it is especially interesting to observe that the interest in the war and historical movie genres is not impacted by the occurrence of wars, political instability, and catastrophes. This may be an indication that the audience is not interested in watching movies about the events they are currently experiencing. Is this supported by short-time trends?
 
-<image src="images/Q4/short_term_trends.png" style="width: 100%; height: auto;">
+<image src="images/Q4/short_term_trends.png" style="width: 100%; height: auto;"></image>
 
 At least for war movies, it is not. The interest in war movies is not impacted by the occurrence of wars even in the short term, except for a couple of instances such as war in Ukraine or a conflict in Gaza back in 2007. This indicates that the audiences are rarely interested in watching movies about the events taht are currently experienced.
 
