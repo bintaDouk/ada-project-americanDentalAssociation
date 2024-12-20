@@ -686,10 +686,87 @@ The Cold War was as much a battle of ideologies as it was a geopolitical and mil
 <iframe class="toggle-frame" src="heatmap_5.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_Before2" style="display: block;">positive barplot</iframe>
 <iframe class="toggle-frame" src="heatmap_6.html" width="800px" height="900px" frameborder="0" position="relative" id="cw_After2" style="display: block;">positive barplot</iframe>
 
-On the Western Bloc side during the Cold War tensions, sentiment towards entities is mixed, with a noticeable inclination toward more negative sentiments. For instance, organizations such as the KGB and Communist Party exhibit both positive and negative sentiment scores. Interestingly, some US-related entities also receive negative sentiments, reflecting a nuanced narrative. This suggests that, despite the overarching hostility depicted in media towards the opposing bloc, the relatively freer speech in the West allowed for more balanced or even positive portrayals in certain instances. Furthermore, military organizations and concepts, such as Military and DEFCON, are often associated with negative sentiments, reflecting the pervasive anxiety about the potential for imminent conflict.
+On the Western Bloc side during the Cold War tensions, sentiment towards entities is mixed, with a noticeable
+inclination toward more negative sentiments. For instance, organizations such as the KGB and Communist Partyexhibit both positive and negative sentiment scores. Interestingly, some US-related entities also receive negative sentiments, reflecting a nuanced narrative. This suggests that, despite the overarching hostility depicted in media towards the opposing bloc, the relatively freer speech in the West allowed for more balanced or even positive portrayals in certain instances. Furthermore, military organizations and concepts, such as Military and DEFCON, are often associated with negative sentiments, reflecting the pervasive anxiety about the potential for imminent conflict.
 
 After the Cold War, sentiments toward Soviet bloc-related entities become less negative as tensions subside, reflecting a gradual easing of hostility in narratives.
 
 In contrast, the Soviet bloc exhibits a universally positive representation of its allied entities, such as the Bolshevik Party, which achieves a notably high positive sentiment (~0.8). This consistent positivity highlights the influence of controlled narratives within the Soviet bloc, where media operated under stricter guidelines and presented a narrower, more favorable lens on allied organizations.
 
+# Audience Preferences During Crises
+
+Over the course of this analysis, we have explored the evolution of war cinema and the sentiment associated with different entities during global conflicts. All of that was based on the internal production and representation of the movies. In this final part, we would like to switch to the viewer sentiment and interest, aligning global
+events such as wars, pandemics, and natural disasters to inspect both short-term and long-term shifts in audience
+preferences. To do this, we will inspect genre-specific trend analysis to identify spikes in popularity as well as
+sustained changes over time. In order to achieve this, we utilize the insights from [Google Search Trends](https://trends.google.com/trends/) that will help us uncover user interest for both general movie genres and thematics and particular movies in our aggregated movies dataset.
+
+## Genres Interest Over Time 
+
+In previous parts we have found the most prominent movies genres. Now we will explore the interest in these genres over time. We firstly took the top 20 genres overall.
+
+<image src="images/Q4/top_genres.png" width="100%" height="800">
+
+We then analyzed the search interest intensity over the years for these genres.
+
+<image src="images/Q4/heatmap_interest.png" width="100%" height="800">
+
+The first general observation is that the overall movies popularity peaked in 2016-2017 and then again in the beginning of COVID pandemics. The reason for the peak during the pandemics is clear - we were stuck at home during the lockdowns! However, why was there another peak in 2016-2017?
+
+This peak could be explained by two of many other factors: 1) By 2015, streaming had firmly established itself as a dominant force in the entertainment industry. Netflix had expanded to over 190 countries, and Amazon Prime Video had also become a significant player, therefore driving interest in movies. 2) 2016-2018 were among the best years in history with the number of newly released movies as well as box office numbers peaked. Further analysis of such factors would be a particularly interesting idea but is worth another ADA project by itself!
+
+<image src="images/Q4/box_office.png" width="100%" height="800">
+
+Source: [BoxOfficeMojo](https://www.boxofficemojo.com/year/)
+
+If we zoom out from these peak periods, we can also observe strong seasonality patterns in particular movie genres interest. For example, interest for horror movies generally peaks during Halloween season and Family movies peak around Christmas. 
+
+<image src="images/Q4/seasonality_chart.png" width="100%" height="800">
+
+We can now perform a seasonal decomposition analysis to further inspect the strength of such patterns for all movie genres. This analysis is performed using an additive seasonality signal:
+
+Y[t] = T[t] + S[t] + e[t]
+
+- Y[t]: Popularity of a movie genre at time t
+- T[t]: Trend
+- S[t]: Seasonality
+- e[t]: Residual
+
+This helps us to firstly identify if there are movie movie genres exhibiting strong seasonality patterns. While we do not find more positive seasonality patterns as for Horror and Family movies, we can observe more significant negative seasonality where popularity historical movies reduces during the summer months. This seasonal impact is more prolonged, as observed by wider signal peaks.
+
+<image src="images/Q4/seasonality_all.png" width="100%" height="800">
+
+One potential reason for such negative seasonality could be that historical movies are consumed for educational purposes, therefore during the summer months, when students are on vacation, the interest in historical movies decreases.
+
+Moreover, as explained above, the seasonality decomposition also provides us the ability to infer a cleaner trend signal. Paired with a polynomial regression (of degree two in this case), we can identify the overall trend in popularity for each movie genre.
+
+<image src="images/Q4/trend_all.png" width="100%" height="800">
+
+Here, we can clearly see long-term changes in the popularity of different movie genres. The majority of genres exhibit a popularity trend consistent with the movies popularity peaks where the trend was positive until 2017 and reversed shortly after that. It is also observed that crime and thriller movie genres have been consistently gaining popularity over the years. A clear declining trend is also observed for the historical movie genre and music movies. What is a music movie? As per IMDb:
+
+> Music Movie: Contains significant music-related elements while not actually being a Musical; this may mean a concert, or a story about a band (either fictional or documentary). Examples: A Star Is Born (2018) |Almost Famous (2000) | Sunshine Daydream (2013)
+
+Focusing ourselves on the impact of wars, we can see that the popularity in war and historical movies genres has been very stable over the years. It is clear that people are always interested in re-visiting and learning about historical events through the lens of a movie.
+
+However are the interest fluctuations related to the number of movies released over the years? To answer this, we have to restrict ourselves in movies data availability period which overlaps with available Google Search Trends Data for years 2004-2012. We can then estimate the correlation between the number of movies released and the interest in a particular genre.
+
+<image src="images/Q4/correlation.png" width="100%" height="800">
+
+The results suggest that the number of genre-specific movies released in a year is largely negatively correlated with the interest for such a genre. A possible explanation for that could be that if more movies are released in a genre, audiences might experience fatigue or feel overwhelmed, leading to a decline in search interest. Nonetheless, there are three notable outliers over our defined sample period: Music, Musicals and Sci-Fi movies. These differences could be explained by a boom of Sci-Fi movies released over the 2000s. There was also a shorter boom in Musicals, especially notable with the release of *Mamma Mia!* and other Musicals that followed the influx of this movie's genres. This would suggest that over the years the interest in such genres was not dilluted by the amount of new movies being released. Nonetheless, these results are not significant at a 5% confidence level, therefore cannot be considered as a strong evidence of a relationship between the number of movies released and the interest in a genre.
+
+But what about the impact of global events on audience preferences? To answer this question, we will shift focus to changes in genre popularity when these events occur. We can firstly try to check if the occurences of different global events had an impact on the interest of certain movie genres. For that, we have collected the most important global events from the [Wikipedia's 21st Century Timeline](https://en.wikipedia.org/wiki/Timeline_of_the_21st_century) and classified them into 5 types: wars, political instability, natural disasters, catastrophes, pandemics, and economic crises. We then analyzed the changes interest of different movie genres together with the number of instances of these events over the months over the period of 2004 to 2023. For that, a linear regression analysis was performed to estimate the impact of these events on the interest in a genre. Below we have plotted only those results which are significant at a 5% confidence level.
+
+<image src="images/Q4/events_on_movie_interest.png" width="100%" height="1600">
+
+While the results estimate that the impact of global events on the interest in movie genres is significant for some pairs, the R-squared values are generally low, indicating that the global events do not explain the majority of the variance in the interest in movie genres, which is rational considering the rarity of such global events happening.
+
+<image src="images/Q4/events_on_movie_interest_heatmap.png" width="100%" height="800">
+
+The most significant impact is naturally observed by the occurence of pandemics. For our observation period, only COVID pandemic had a significant impact on the interest in almost all movie genres. This is rational as people were stuck at home during the lockdowns and were looking for ways to entertain themselves.
+
+Nonetheless, it is especially interesting to observe that the interest in the war and historical movie genres is not impacted by the occurrence of wars, political instability, and catastrophes. This may be an indication that the audience is not interested in watching movies about the events they are currently experiencing. Is this supported by short-time trends?
+
+<image src="images/Q4/short_term_trends.png" width="100%" height="1400">
+
+
+At least for war movies, it is not. The interest in war movies is not impacted by the occurrence of wars even in the short term, except for a couple of instances such as war in Ukraine or a conflict in Gaza back in 2007. This indicates that the audiences are rarely interested in watching movies about the events taht are currently experienced.
 
