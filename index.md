@@ -534,7 +534,7 @@ We performed a sentiment analysis on the summaries of the movies identified. Thi
 
 We do observe a higher negative score which isn't surprizing, however the overlapping confidence intervals across all categories indicate that the differences between the Allied and Axis films' sentiment scores are pretty similar. However, it is surpriing to observe that the confidence intervall is much higher for the compound result. Let's observe the distribution. 
 
-<iframe src="wwii_distribution_compound.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+<iframe src="wwii_distribution_mini.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
 
 The distribution is pretty similar among the two samples, however the sample sizes are imbalanced, which could contribute to the variability observed, particularly for Side 2. We also conducted a T-test that confirmed that they were no significant difference between the two sides. 
 
