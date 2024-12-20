@@ -204,7 +204,7 @@ function showFrame(frameId) {
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('corrvietnum')">Number of Wars</button>
 
 <iframe class="toggle-frame" src="images/Q1/corr_batdeath_Fantasy_1963-1977.html" width="800px" height="900px" frameborder="0" position="relative" id="corrvietbat" style="display: block;"></iframe>
-<iframe class="toggle-frame" src="images/Q1/corr_numwars_Family_Film_1963-1977.htm" width="800px" height="900px" frameborder="0" position="relative" id="corrvietnum" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/corr_numwars_Family_Film_1963-1977.html" width="800px" height="900px" frameborder="0" position="relative" id="corrvietnum" style="display: block;"></iframe>
 
 
 Correlations for the Cold War (1947-1991)
@@ -331,7 +331,7 @@ function showFrame(frameId) {
 </script>
 
 <!-- Create the buttons -->
-<button class="button" style="margin: 0.5px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('ww2change')">WW2</button>
+<button class="button" style="margin: 0.5px 0; width: 20%; margin-left: 10px; margin-right: 5px" onclick="showFrame('ww2change')">WW2</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('coldchange')">Cold War</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('vietchange')">Vietnam War</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('iraniraqchange')">Iran-Iraq War</button>
@@ -343,6 +343,12 @@ function showFrame(frameId) {
 
 
 ## Specific Genres for the Chosen Wars
+
+<button class="button" style="margin: 0.5px 0; width: 20%; margin-left: 10px; margin-right: 5px" onclick="showFrame('WW2')">WW2</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('Cold')">Cold War</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('Vietnam')">Vietnam War</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('Iran')">Iran-Iraq War</button>
+
 World War II
 <div id="WW2" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
@@ -356,13 +362,13 @@ World War II
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='images/Q1/WW2_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/WW2_barplot_militaryandantiwar.html' width="800" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/WW2_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/WW2_barplot_political.html' width="800" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/WW2_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/WW2_barplot_positive.html' width="800" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -394,13 +400,13 @@ The Cold War
       <iframe src='images/Q1/Cold_War_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/Cold_War_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Cold_War_barplot_political.html' width="800" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/Cold_War_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Cold_War_barplot_dystopian.html' width="800" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/Cold_War_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Cold_War_barplot_positive.html' width="800" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -433,13 +439,13 @@ The Vietnam War
       <iframe src='images/Q1/Vietnam_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/Vietnam_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Vietnam_barplot_political.html' width="800" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/Vietnam_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Vietnam_barplot_dystopian.html' width="800" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/Vietnam_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Vietnam_barplot_positive.html' width="800" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -472,13 +478,13 @@ The Iran-Iraq War
       <iframe src='images/Q1/Iran-Iraq_barplot_militaryandantiwar.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/Iran-Iraq_barplot_political.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Iran-Iraq_barplot_political.html' width="800" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/Iran-Iraq_barplot_dystopian.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Iran-Iraq_barplot_dystopian.html' width="800" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/Iran-Iraq_barplot_positive.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/Iran-Iraq_barplot_positive.html' width="800" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
