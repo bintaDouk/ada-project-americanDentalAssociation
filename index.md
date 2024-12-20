@@ -760,15 +760,13 @@ At least for war movies, it is not. The interest in war movies is not impacted b
 
 # Conclusion
 Through this study, we explored how global events, particularly conflicts like World War II, the Cold War, and others, have influenced film genres, public preferences, and sentiment. The analysis of ouur data uncovered how historical events shape cinematic narratives, both in terms of content and reception.
-**Conclusion part 1**
-**Conclusion part 2**
-All wars have been met with a similar increase in genres associated with a serious and tense tone, but there are also charactecteristics differentiating the single countries, both in terms of amounts and genres. On top of that, due to the fact that every single conflict has a sphere of influence different from the others, it is difficult to find constant results across different conflicts.
 
-**Conclusion part 3**
-Sentiment analysis revealed a predominantly negative tone in war-related narratives, reflecting the inherent gravitas of such topics. Entity-level analysis highlighted an universal negativity towards military organizations, shifts in the portrayal of political parties, such as the Nazi Party, and neutral to positive portrayals of international organizations like NATO.
+The initial findings showed that wars significantly influence the production of various movie genres, with military genres like War Films and Spy Films showing cyclic peaks during major conflicts, such as World War II and the Vietnam War, before declining afterward. Positive genres such as Comedy and Family Films generally provided escapism though prolonged conflicts disrupted their stability. Shifts during key wars, such as spikes in propaganda films during World War II and increased Thrillers and Action Films during the Vietnam War, underscore the nuanced interplay between warfare and cinematic trends.
 
-**Conclusion part 4**
+All wars have been met with a similar increase in genres associated with a serious and tense tone, but there are also charactecteristics differentiating the single countries, both in terms of amounts and genres. On top of that, due to the fact that every single conflict has a sphere of influence different from the others, it is difficult to demonstrate constant results across different conflicts.
 
-Audience preferences for movie genres are shaped by seasonal patterns and broader trends, with peaks during 2016-2017 and the COVID-19 pandemic. Seasonal spikes such as Halloween for horror and Christmas for family movies are observed. Interest in most genres have periods of interest growth and decline while crime and thriller genres show sustained growth. Global events like pandemics significantly impact interest but wars and other crises have minimal influence, suggesting audiences prefer escapism over real-time reflections of hardships. Additionally, more movie releases in a genre often correlate with declining interest, though exceptions like Sci-Fi challenge this trend.
+Furthermore, each movie has an embedded message which can be revealed by sentiment analysis. Our findings revealed a predominantly negative tone in war-related narratives, reflecting the inherent gravitas of such topics. Entity-level analysis highlighted an universal negativity towards military organizations, shifts in the portrayal of political parties, such as the Nazi Party, and neutral to positive portrayals of international organizations like NATO.
+
+The portrayal of global events such as war is inherent to the production of movies. However, interest in such movies is an important external factor. Audience preferences for movie genres are shaped by seasonal patterns and broader trends, with peaks during 2016-2017 and the COVID-19 pandemic. Seasonal spikes such as Halloween for horror and Christmas for family movies weere observed. Interest in most genres have periods of interest growth and decline while crime and thriller genres show sustained growth. Global events like pandemics significantly impact interest but wars and other crises have minimal influence, suggesting audiences prefer escapism over real-time reflections of hardships.
 
 
