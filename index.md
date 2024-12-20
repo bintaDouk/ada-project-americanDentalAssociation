@@ -530,7 +530,7 @@ We isolated war films specifically depicting our four conflicts of interest and 
 
 We performed a sentiment analysis on the summaries of the movies identified. This analysis helped identify the emotional tone of the summaries, determining whether they are primarily positive, negative, or neutral depending of the countries of production and the event. 
 
-<iframe src="wwii_sentiment_analysis.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
+<iframe src="wwii_sentiment_mini.html" width="100%" height="800px" frameborder="0">n_movies </iframe>
 
 We do observe a higher negative score which isn't surprizing, however the overlapping confidence intervals across all categories indicate that the differences between the Allied and Axis films' sentiment scores are pretty similar. However, it is surpriing to observe that the confidence intervall is much higher for the compound result. Let's observe the distribution. 
 
