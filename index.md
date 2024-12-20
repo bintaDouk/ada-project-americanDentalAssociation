@@ -94,7 +94,7 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
   </button>
 </div>
 
-<div class="container my-4">
+<!-- <div class="container my-4">
     <!-- Second Carousel -->
     <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -126,7 +126,7 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-</div>
+</div> -->
 
 ## Correlations
 Correlations for the Second World War (1937-1947)
