@@ -702,7 +702,7 @@ We then analyzed the search interest intensity over the years for these genres.
 
 The first general observation is that the overall movies popularity peaked in 2016-2017 and then again in the beginning of COVID pandemics. The reason for the peak during the pandemics is clear - we were stuck at home during the lockdowns! However, why was there another peak in 2016-2017?
 
-This peak could be explained by two of many other factors: 1) By 2015, streaming had firmly established itself as a dominant force in the entertainment industry. Netflix had expanded to over 190 countries, and Amazon Prime Video had also become a significant player, therefore driving interest in movies. 2) 2016-2018 were among the best years in history with the number of newly released movies as well as box office numbers peaked (Source: [BoxOfficeMojo](https://www.boxofficemojo.com/year/)). Further analysis of such factors would be a particularly interesting idea but is worth another ADA project by itself!
+This peak could be explained by two of many other factors: 1. By 2015, streaming had firmly established itself as a dominant force in the entertainment industry. Netflix had expanded to over 190 countries, and Amazon Prime Video had also become a significant player, therefore driving interest in movies. 2. 2016-2018 were among the best years in history with the number of newly released movies as well as box office numbers peaked (Source: [BoxOfficeMojo](https://www.boxofficemojo.com/year/)). Further analysis of such factors would be a particularly interesting idea but is worth another ADA project by itself!
 
 If we zoom out from these peak periods, we can also observe strong seasonality patterns in particular movie genres interest. For example, interest for horror movies generally peaks during Halloween season and Family movies peak around Christmas. 
 
@@ -766,7 +766,6 @@ Sentiment analysis revealed a predominantly negative tone in war-related narrati
 
 **Conclusion part 4**
 
-
-Cinematography has always served as a cultural mirror, reflecting societal values, fears, and aspirations. By analyzing how global conflicts shape film genres and sentiments, this study underscores the power of storytelling to influence and preserve historical memory.
+Audience preferences for movie genres are shaped by seasonal patterns and broader trends, with peaks during 2016-2017 and the COVID-19 pandemic. Seasonal spikes such as Halloween for horror and Christmas for family movies are observed. Interest in most genres have periods of interest growth and decline while crime and thriller genres show sustained growth. Global events like pandemics significantly impact interest but wars and other crises have minimal influence, suggesting audiences prefer escapism over real-time reflections of hardships. Additionally, more movie releases in a genre often correlate with declining interest, though exceptions like Sci-Fi challenge this trend.
 
 
