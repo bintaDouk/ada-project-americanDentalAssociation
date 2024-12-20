@@ -54,7 +54,7 @@ Our analysis starts from three main datasets:
 * The [IMDb Dataset](https://www.kaggle.com/datasets/ashirwadsangwan/imdb-dataset), containing movie ratings and other information
 * The [Correlates of War Dataset](https://correlatesofwar.org/data-sets/cow-war/), containing a list of major historical conflicts
 After some quick initial filtering, we merged the CMU and IMDb datasets to generate a bigger `Movies` dataset better suited for our needs, and we filtered the `Wars` datasets to only contain the conflicts relevant to the time period corresponding to the movies we are considering.   
-On top of that, throughout the project decided to focus our analysis on reduced sets of wars are identified in the project.
+On top of that, throughout the project we decided to focus our analysis on reduced sets of wars, which are identified in the project.
 
 ## Inspecting genre groups
 
