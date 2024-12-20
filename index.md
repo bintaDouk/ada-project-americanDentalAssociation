@@ -199,7 +199,6 @@ function showFrame(frameId) {
 }
 </script>
 
-
 <!-- Create the buttons -->
 <button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('corrvietbat')">Battle Deaths</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('corrvietnum')">Number of Wars</button>
@@ -234,6 +233,36 @@ Romantic comedy -0.5606378599453922 1.7646923697819293e-06, 0.314
 
 Battle Deaths
 None 
+
+<div id="carouselcorr4" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselcorr4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe src='images/Q1/corr_numwars_Superhero_1950-2012.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe src='images/Q1/corr_numwars_Romantic_comedy_1950-2012.html' width="100%" height="600" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr4" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr4" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 Correlations for the the End of 20th - Beginning of 21st Century
 
@@ -302,7 +331,7 @@ function showFrame(frameId) {
 </script>
 
 <!-- Create the buttons -->
-<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('ww2change')">WW2</button>
+<button class="button" style="margin: 0.5px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('ww2change')">WW2</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('coldchange')">Cold War</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('vietchange')">Vietnam War</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('iraniraqchange')">Iran-Iraq War</button>
