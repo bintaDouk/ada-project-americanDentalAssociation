@@ -344,13 +344,37 @@ function showFrame(frameId) {
 
 ## Specific Genres for the Chosen Wars
 
+<script>
+  function showFrame(id) {
+    // Hide all carousels
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+      carousel.style.display = 'none';
+    });
+
+    // Show the selected carousel
+    const selectedCarousel = document.getElementById(id);
+    if (selectedCarousel) {
+      selectedCarousel.style.display = 'block';
+    }
+  }
+
+  // Initially hide all carousels
+  document.addEventListener('DOMContentLoaded', () => {
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+      carousel.style.display = 'none';
+    });
+  });
+</script>
+
 <button class="button" style="margin: 0.5px 0; width: 20%; margin-left: 10px; margin-right: 5px" onclick="showFrame('WW2')">WW2</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('Cold')">Cold War</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('Vietnam')">Vietnam War</button>
 <button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('Iran')">Iran-Iraq War</button>
 
 World War II
-<div id="WW2" class="carousel slide" data-bs-ride="carousel">
+<div id="WW2" class="carousel slide" data-bs-ride="carousel" style="display: none;">
   <!-- Indicators -->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#WW2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -385,7 +409,7 @@ World War II
 
 
 The Cold War
-<div id="Cold" class="carousel slide" data-bs-ride="carousel">
+<div id="Cold" class="carousel slide" data-bs-ride="carousel" style="display: none;">
   <!-- Indicators -->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#Cold" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -424,7 +448,7 @@ The Cold War
 
 The Vietnam War
 
-<div id="Vietnam" class="carousel slide" data-bs-ride="carousel">
+<div id="Vietnam" class="carousel slide" data-bs-ride="carousel" style="display: none;">
   <!-- Indicators -->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#Vietnam" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -463,7 +487,7 @@ The Vietnam War
 
 The Iran-Iraq War
 
-<div id="Iran" class="carousel slide" data-bs-ride="carousel">
+<div id="Iran" class="carousel slide" data-bs-ride="carousel" style="display: none;">
   <!-- Indicators -->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#Iran" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
