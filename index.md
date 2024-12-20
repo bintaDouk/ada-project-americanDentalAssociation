@@ -58,6 +58,17 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
 
 ## Inspect genre groups
 
+The analysis in the first section examines how various wars influenced the production of different movie genres over time. By analyzing genre proportions, correlations with war-related metrics, co-occurrence networks, and significant changes in genre distributions, this analysis uncovers key insights about the interplay between historical conflicts and cinema production.
+
+To lead a preliminary inspection of war-related genres and chose specific wars for further analysis, three groups of of a few specfic genres were formed: war-related genres, political genres, dystopian genres.
+
+Military(War-related) genres: War Film, Antiwar, Superhero, Spy
+Political genres: Political Thriller, Political Satire, Political Cinema, Political Drama
+Dystopian genres: Dystopia, Apocalyptic and Postapocalyptic Fiction
+
+The war-related genres are the ones that we identified eariler as genres either related to war or military propaganda. Political genres were chosen to reflect the geopolitical side of wars. Dystopian and Apocalyptic genres were chosen as these genres often talk about war-related aplocalypses as well as dystopian societies based on military rule.
+In the plots below, the proportion of movies in a genre group released each year (in relation to the total movies released) are presented for the whole timeline. 
+
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
   <div class="carousel-indicators">
@@ -94,51 +105,47 @@ On top of that, we decided to focus our analysis on a reduced set of wars, being
   </button>
 </div>
 
-<!-- <div class="container my-4">
-    <!-- Second Carousel -->
-    <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <iframe src="images/Q1/trend_batdeath_military.html" frameborder="0" width="100%" height="600"></iframe>
-            </div>
-            <div class="carousel-item">
-                <iframe src="images/Q1/trend_batdeath_antiwarmilitary.html" frameborder="0" width="100%" height="600"></iframe>
-            </div>
-            <div class="carousel-item">
-                <iframe src="images/Q1/trend_batdeath_political.html" frameborder="0" width="100%" height="600"></iframe>
-            </div>
-            <div class="carousel-item">
-                <iframe src="images/Q1/trend_batdeath_dystopian.html" frameborder="0" width="100%" height="600"></iframe>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div> -->
+From the military genre production trends, we can see that the biggest spike can be associated with WW2 - it reached its peak in 1943, around the middle of the war. However, some other noticeably spikes happened in 1966 and 1958, a year in the beginning of a full-scale Vietnam War and a year when it was still a Civil War with some indirect involvement of other countries. However, the Cold War was also ongoing at the time. Since the Cold War's official timeline is around 40 years, it is difficult to associate specific spikes with it without inspecting the timeline of the smaller events within it. 
+In the political genres figure we observe a lot of oscillation, so the only observation we can make from the plot is the overall growth of the political genres from 1930s to 1990s.
+In the dystopian genres, the trend is pretty stable over time except for the two noticeably peaks in 1974 and 1990, at the end Vietnam War and at the end of the Cold War.
+
+We were interested in the times when spikes appeared for each genre group. Thus, the peaks for these genre groups were inspected, and a list of events in the 2-year window around the peak year was formed to analyze further. The events that were chosen appeared in at least two of the final lists and had more than 1000 movies released in their timeline (a sperate group of War movies without the Antiwar was created as well, since the movies specifically labelled Antiwar are of a different nature). The comprehensive list of events to analyzed was yielded:
+- World War II
+- Vietnam War
+- Second Laotian War
+- Cold War
+- Iran-Iraq War
 
 ## Correlations
+In this section, for the chosen wars' time window (the timeline with a 2 year window before and after), we inspected the correlation of the genres released with the number of ongoing wars per year and yearly battle deaths. The inspection was conducted for the genres groups mentioned before. Moreover, for a list of genres the correlation with individual genres was performed:
+War film, Spy, Superhero, Romance Film, Romantic drama, Family Film, Romantic comedy, Comedy, Fantasy, Thriller, Horror, Drama, Social issues, Antiwar, Disaster
+Moreover, another genre group was created:
+Positive genres: Family Film, Romance Film, Romantic Comedy, Fantasy, Romantic Drama.
+
+The range of genres was increased in order to include the more widespread genres, such as Drama, and inspect negative genres, such as Horror and Thriller, and postive genres. One of the objectives of the analysis was to identify not just correlation with war-related genres or horror-related genres but with positive genres that are associated with entertainemnt and/or escapism.
+
+The plot below showcase the scatter plots for genre proportions vs. number of ongoing wars or vs. battle deaths. The plots also contain the Pearson correlation value, the p-value and the OLS line. Only the cases with correlation value above 0.45 are presented. In the analysis, the Null Hypothesis associated with the p-value is that the correlation coefficient is not significantly different from zero. For the analysis of the plots we choose the condifence interval of 95% (alpha = 0.05) and inspect the R-squared value as well.
+
 Correlations for the Second World War (1937-1947)
 
+Number of Wars
+
+None of the correlation values yilded a p-value below 0.05.
+
+Battle Deaths
+
+Family Film yilded correlation value of -0.72, p-value 0.0167 and R-squared of 0.524. This suggests that 
+Horror 0.84, 0.00137, 0.6976
+Drama -0.60887, 0.046796, 0.37
+
 <!-- First Carousel -->
-<div id="carouselcorr" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselcorrwar" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselcorr" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselcorr" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselcorr" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselcorr" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselcorrwar" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselcorrwar" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselcorrwar" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselcorrwar" data-bs-slide-to="3" aria-label="Slide 4"></button>
   </div>
 
   <!-- Slides -->
@@ -152,32 +159,14 @@ Correlations for the Second World War (1937-1947)
     <div class="carousel-item">
       <iframe src='images/Q1/corr_batdeath_Horror_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_Military_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-    <iframe src='images/Q1/corr_batdeath_Military&Antiwar_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-    <iframe src='images/Q1/corr_batdeath_War_film_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-    <iframe src='images/Q1/corr_numwars_Antiwar_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-    <iframe src='images/Q1/corr_numwars_Disaster_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-    <iframe src='images/Q1/corr_numwars_Thriller_1937-1947.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
   </div>
 
   <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorrwar" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorrwar" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
@@ -185,84 +174,76 @@ Correlations for the Second World War (1937-1947)
 
 Correlations for the Vietnam War (1963-1977)
 
-<!-- Second Carousel -->
-<div id="carouselcorr2" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselcorr2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselcorr2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselcorr2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselcorr2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
+Number of Wars
 
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/corr_batdeath_Fantasy_1963-1977.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_Family_Film_1963-1977.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_Romantic_comedy_1963-1977.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
+Family Film -0.610757, 0.015, 0.373
 
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr2" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr2" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+
+Battle Deaths
+
+Fantasy -0.5166, 0.04862, 0.2669
+
+<script>
+function showFrame(frameId) {
+  // Get all iframes with the toggle-frame class
+  var frames = document.getElementsByClassName('toggle-frame');
+
+  // Hide all iframes with the toggle-frame class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+
+<!-- Create the buttons -->
+<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('corrvietbat')">Battle Deaths</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('corrvietnum')">Number of Wars</button>
+
+<iframe class="toggle-frame" src="images/Q1/corr_batdeath_Fantasy_1963-1977.html" width="800px" height="900px" frameborder="0" position="relative" id="corrvietbat" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/corr_numwars_Family_Film_1963-1977.htm" width="800px" height="900px" frameborder="0" position="relative" id="corrvietnum" style="display: block;"></iframe>
+
 
 Correlations for the Cold War (1947-1991)
+
+Number of Wars
+
+Romantic Comedy -0.4506173070283014, 0.0018944734201382643, 0.203
 
 <iframe src='images/Q1/corr_numwars_Romantic_comedy_1947-1991.html' width="100%" height="600" frameborder="0"></iframe>
 
 Correlations for the Iran-Iraq War (1978-1990)
-<!-- Third Carousel -->
-<div id="carouselcorr3" class="carousel slide" data-bs-ride="carousel">
-  <!-- Indicators -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselcorr3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselcorr3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselcorr3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselcorr3" data-bs-slide-to="3" aria-label="Slide 4"></button>
-  </div>
 
-  <!-- Slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <iframe src='images/Q1/corr_batdeath_Disaster_1978-1990.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_batdeath_Superhero_1978-1990.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_Disaster_1978-1990.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-    <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_Family_Film_1978-1990.html' width="100%" height="600" frameborder="0"></iframe>
-    </div>
-  </div>
+None of the correlations yield a small enough p-value
 
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselcorr3" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselcorr3" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
 Correlations for the timeline (1950-2012)
-1950 was created as a cut off since the spike in battle deaths during the WW2 significantely affected the results.
+
+Correlations were first calculated for the full timeline of 1931-2012 and yilded very low p-values for War Film, Military Movies, Military & Antiwar Movies. However, most battle deaths recorded are below 300,000, while the Battle Deaths for the WW2 are recorded as more than 2 million yearly (approximation done by dividing the duration of a war by the total battle death). So these values will not be reported as significant, even though it can be said that the proportion of War movies had the largest spike at the time.
+
+Consequently, a cutoff of 1950 was created since the spike in battle deaths during the WW2 significantely affected the results.
+
+Number of Wars
+
+Superhero -0.484137387377459 5.8151254544748465e-05, 0.234
+Romantic comedy -0.5606378599453922 1.7646923697819293e-06, 0.314
+
+Battle Deaths
+None 
+
+Correlations for the the End of 20th - Beginning of 21st Century
+
+Number of Wars
+
+Social Issues -0.5008439056090079, 0.01492, 0.2508
+Political Movies  -0.5483382551604977, 0.006747061757120175, 0.3
+
+Battle Deaths
+None
 
 <div id="carouselcorr4" class="carousel slide" data-bs-ride="carousel">
   <!-- Indicators -->
@@ -276,10 +257,10 @@ Correlations for the timeline (1950-2012)
   <!-- Slides -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <iframe src='images/Q1/corr_numwars_Romantic_comedy_1950-2012.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numwars_Social_issues_1990-2012.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
     <div class="carousel-item">
-      <iframe src='images/Q1/corr_numwars_Superhero_1950-2012.html' width="100%" height="600" frameborder="0"></iframe>
+      <iframe src='images/Q1/corr_numrwars_Political_1990-2012.html' width="100%" height="600" frameborder="0"></iframe>
     </div>
   </div>
 
@@ -295,13 +276,42 @@ Correlations for the timeline (1950-2012)
 </div>
 
 Plotting the network
+
+For some inspection, the network for War Film was created, which is the movie genres that were mentioned together with War Film more often. Some of the observations that can be made from the network are that War Films are often associated with historical or documentary films, with action films, and sometimes with political. What is interesting for our analysis is that Comedy, Romance films and Romantic drama often go together with War Films, thus, our objective to inspect the production of more entertaining and escapistic genres may not be supported in full by inspecting these "positive" genres, as they are often included in movies about war as well.
+
 <iframe src="images/Q1/network.html" frameborder="0" width="100%" height="600"></iframe>
 
 ## Significant Changes in Genres for the Chosen Wars
-<iframe src="images/Q1/significantchange_WW2.html" frameborder="0" width="100%" height="600"></iframe>
-<iframe src="images/Q1/significantchange_ColdWar.html" frameborder="0" width="100%" height="600"></iframe>
-<iframe src="images/Q1/significantchange_Vietnam.html" frameborder="0" width="100%" height="600"></iframe>
-<iframe src="images/Q1/significantchange_Iran-Iraq.html" frameborder="0" width="100%" height="600"></iframe>
+
+Significant changes in genre distribution were defined for the chosen wars by using chi-square testing. 
+
+<script>
+function showFrame(frameId) {
+  // Get all iframes with the toggle-frame class
+  var frames = document.getElementsByClassName('toggle-frame');
+
+  // Hide all iframes with the toggle-frame class
+  for (var i = 0; i < frames.length; i++) {
+    frames[i].style.display = 'none';
+  }
+
+  // Show the selected iframe
+  var frame = document.getElementById(frameId);
+  frame.style.display = 'block';
+}
+</script>
+
+<!-- Create the buttons -->
+<button class="button" style="margin: 8px 0; width: 20%; margin-left: 130px; margin-right: 5px" onclick="showFrame('ww2change')">WW2</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('coldchange')">Cold War</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('vietchange')">Vietnam War</button>
+<button class="button" style="width: 20%; margin-right: 5px;" onclick="showFrame('iraniraqchange')">Iran-Iraq War</button>
+
+<iframe class="toggle-frame" src="images/Q1/significantchange_WW2.html" width="800px" height="900px" frameborder="0" position="relative" id="ww2change" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/significantchange_ColdWar.html" width="800px" height="900px" frameborder="0" position="relative" id="coldchange" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/significantchange_Vietnam.html" width="800px" height="900px" frameborder="0" position="relative" id="vietchange" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="images/Q1/significantchange_Iran-Iraq.html" width="800px" height="900px" frameborder="0" position="relative" id="iraniraqchange" style="display: block;"></iframe>
+
 
 ## Specific Genres for the Chosen Wars
 World War II
